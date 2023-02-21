@@ -1,0 +1,337 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+header{ /*Es la clase header que contiene la imagen Portada*/
+	height: 150px; /*Específica la altura del elemento*/
+	background-image: linear-gradient(to top, rgba(117, 209, 230, 0.2) 0%, rgba(117, 209, 230, 0.2)100%), url(../Imagenes/Portada.jpg); /*Establece la imagen de fondo*/
+	background-repeat: no-repeat; /*Define como se repiten los fondos*/
+	background-size: cover; /*tamaño de las imagenes de fondo: "cover" escala la imagen al máximo sin deformarla  */
+	background-attachment: fixed; /*Indica si la posición de la imagen será fija o se desplazara con el bloque contenedor*/
+	background-position: 10% 30%; /*Define la posicion de la imagen inicial*/
+}
+
+.titulo{
+	font-size: 20px;
+	margin: 0.5% auto auto 1% ; 
+	color: rgba(225, 225, 225, 1);
+	text-shadow:  1px 1px 2px black;
+}
+
+.copy{
+	font-weight: 600;
+	font-size:25px;
+	color: rgba(225, 225, 225, 1);
+	text-shadow:  1px 1px 2px black;
+}
+
+.subtitulo{
+	text-align: center;
+	color: rgba(225, 225, 225, 1);
+	margin-top: 80px;
+	font-size: 40px;
+	text-shadow:  1px 1px 2px black;
+}
+
+.menu_icono{
+	   padding: 0px;
+    width: 35px;
+    margin: 0px;
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.contenedor{ 
+	width: ;
+	/* max-width: 1500px;  */
+	overflow: hidden;/*Para ocultar lo que se desborde*/
+	margin-left: 150px; /*Para centrar*/
+	/* padding: 60px 0; /*Para siempre tener espaciado entre los elementos*/ */
+}
+
+.menu_desplegable{
+	position:absolute; /*sus propiedades especifican los valores respecto al flujo de la página*/
+	top: 200px; /*A partir de la parte más alta 200px*/
+	height: 20px;
+	background-color: #1A202C; /*color de fonde de un elemento*/
+	color: #fff;
+	width: 100%; /*establece anchira del área de contenido*/
+	
+}
+
+.menu_contenido{
+	/* display:flex; /*visualizacion interna y externa de un elemento. "flex": display-inside -> Se comporta como elemento de bloque para el diseño de interfaces de usuario*/ */
+	justify-content:space-between; /*indica como se distribuyen, en el navegador, los items hijos entre sí y con el padre*/
+	align-items:center; /* Alineación de items: Pone horizontalmente en la esquina*/
+	width:90%;
+	max-width:1200px;
+	height: 100%; 
+	margin: 0 auto;
+}
+
+.menu_links{
+	height: 100%;
+	transition: transfrom .5s; /*Es para animar la salida de elementos*/ 
+	display: flex; /* Para que los elementos se distribuyan de forma fluida: uno al lado del otro con sus items*/
+	float: left;
+}
+
+.menu_item{
+	list-style: none; /*Para establecer el estilo de lista*/
+	position: relative; /*A diefrencia de relative este toma como referencia su posición predeterminada*/
+	height: 100%;
+	--clip: polygon(0 0, 100% 0, 100% 0, 0 0); /*custom properti (--*nombre) sacada de clippy  : Oculta*/
+	--transform: rotate(-90deg); /*Para que gire de 90 a 0*/
+}
+
+.menu_item:hover{ /*Hago que la custom cambie de ocultar a mostrar*/ 
+	--clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%); /*Muestra el elemeto*/ 
+	--transform: rotate(0); /*Defino otra clippy*/
+}
+
+
+.menu_arrow{
+	transform: var(--transform); /*Permite manipular: rotar, escalar o trasladar: var() permite insertar el valor de a custom property*/
+	transition: transform .3s; /*trancisión entre dos estados */
+	display:block; /*Con saltos de línea antes y después del elemento*/
+	margin-left:3px;
+}
+
+
+.menu_nesting{ 
+	list-style: none;
+	transition: clip-path .3s; /*Esto permite que funcione el menu desplegable*/
+	position:absolute;
+	clip-path: var(--clip); /*clip-path limita una región usando el clippy anterior aquí*/ 
+	left: 0;
+	bottom: 0;
+	width: max-content; /*Acomodar el texto en la caja*/
+	transform: translateY(100%); /*Despliega el menú hacia abajo*/
+	background: #000; /*enargola todas las propiedades de fondo -> aquí solo se ocupa el color*/
+} 
+
+.menu_link{
+	color: rgba(164, 198, 237, 0.96);
+	text-decoration: none;
+	padding:0 30px;
+	display:flex;
+	height: 100%;
+	align-items:center;
+}
+
+.menu_link:hover{ /*Al pasar el mouse sobre él: hover es una pseudo clase, funciona cuando el usuario interactua con el elemento x medio del mouse*/
+	background-color: rgba(0, 55, 117, 1);
+}
+
+.menu_link--inside{
+	padding: 20px 10px 10px 10px; /*establece como rellenar un bloque con el elemento*/
+}
+
+.menu_link--inside:hover{
+	background-color: #798499;
+}
+
+
+.video{
+	float:left;
+	padding: 15px;
+	margin: 90px 0 auto 5%;
+	width: 40%;
+	/* background: yellow; */
+	display: flex;
+	justify-content:center ;
+
+}
+
+.descripcion{
+	/* justify-content:center ; */
+	/* padding-bottom: 200px; */
+	height:300px ; 
+	margin: 90px 5% auto 0;
+	float: right;
+	/* display: flex; */
+	font-size: 1em;
+	text-align: justify;
+	width: 50%; /*Este modifica.informacion*/
+	/* background: green; */
+	vertical-align: middle;
+	align-items: center;
+}
+
+.MiembrosI{
+		/* background: green; */
+		margin-left: 2%;
+		/* display: flex; */
+		padding-top: 5%;
+		/* float: left; */
+		
+}
+
+.MiembrosII{
+		/* background: green; */
+		margin-left: 2%;
+		/* display: flex; */
+		padding-top: 5%;
+		/* float: right; */
+}
+
+div {
+    white-space: normal;
+}
+
+section {
+    white-space: nowrap;
+}
+
+footer{
+	background: #fff;
+}
+
+.Datos{ 
+	font-weight: 100;
+	font-size: 20px;
+}
+
+.Datos+p{/*por qué el +p*/
+	font-weight:100;
+}
+
+.footer-content{
+	display: flex;
+	justify-content:space-between;
+	/* align-items:center; */
+	flex-wrap:wrap;
+	width:100%;
+	padding-left: 20%;	
+	padding-right: 20%;	
+	padding-top: 300px;
+	padding-bottom: 20px;
+
+}
+
+.Informacion{
+	align-items: left;
+	color: rgba(0, 0, 0, 1);
+	/* width: 100%; */
+}
+
+.Redes{
+	width:20%;
+	display:flex;
+	justify-content:flex-end;
+}
+
+.Redes-icon{
+	display: inline-block;
+	margin-left: 50px;
+	width: 60px;
+	height:30px;
+	border-radius: 50%;
+	text-align:center;
+	color:rgba(68, 59, 237, 1);
+}
+
+.Redes-icon:hover{
+	background: rgba(0, 0, 0, 1);
+	color: #764ba2;
+}
+
+.Redes-icon i{
+	font-size: 30px;
+	line-height: 30px;
+}
+
+.barra-titulo{
+	/* margin-top:20% ; */
+	height: 70px;
+	background: #1A202C;
+}
+
+.line{
+	max-width:1200px;
+	margin: 0 auto 10px auto;
+	height: 2px;
+	background: rgba(0, 0, 0, 1);
+}
+/* Esto corresponde al Problema 1*/
+.PezIm{
+	transform: scale(0.7);
+	padding: 10px; 
+	/* background: green; */
+
+}
+
+.Ejimg{
+	/* transform: scale(0.2); */
+	text-align:center;
+	align-items: center;
+	padding: 10px; 
+}
+
+.P1titulo{
+	font-size: 20px;
+	margin: 0.5% auto auto 1% ; 
+	color: rgba(225, 225, 225, 1);
+	text-shadow:  1px 1px 2px black;
+	
+}
+.P1Sub{
+	margin: 100px 200px 10px 200px;
+	font-weight: 500;
+	font-size:25px;
+	color: #33475b;
+	text-shadow:  1px 1px 2px black;
+}
+
+.P1sub{
+	margin: 10px 200px 10px 200px;
+	font-weight: 200;
+	font-size:15px;
+	color: rgba(0,0,0, 1);
+}
+
+.Planteamiento{
+	margin: auto 20% 0 20%;
+	height:50% ; 
+	font-size: 1em;
+	text-align:justify;
+	justify-content:space-between;
+    display: flex;
+	padding: 20px;
+	/* background: green; */
+
+}
+
+.ecuaciones{
+	margin: 0 10% 0 10%;
+	height:40px ; 
+	font-size: 1em;
+	text-align:justify;
+	text-align:center;
+	/* justify-content:space-between; */
+    /* display: flex; */
+	/* padding: 2px; */
+}
+
+.footer-contentP1{
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+	flex-wrap:wrap;
+	width:80%;
+	padding-left: 10%;	
+	padding-right: 10%;	
+	padding-top: 200px;
+	padding-bottom: 20px;
+	/* background: green; */
+}
+
