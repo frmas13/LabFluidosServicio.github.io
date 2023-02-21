@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset = "utf-8" />
+		<link rel ="stylesheet" href = "CSS/PruebaOdenado.css"> <!--href es el archivo css se allá en la misma carpeta-->
+		<meta name = "autor" content = "Roxette Ramirez"/> 
+		<meta name = "Descripción" content = "Difundir el trabajo realizado en el Laboratorio de Fluidos
+		de la Facultad de Ciencias de la UNAM." />
+		<title> P1: Teoría</title>
+		<link rel = "shortcut icon" href = "Icono.ico" type = "image/x-icon" />
+		<link href = "https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet"> 
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+		<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      extensions: ["tex2jax.js"],
+      "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
+      tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+      TeX: { noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+      messageStyle: "none"
+    });
+    </script>    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+</head>
+<body>
+		<header class ="header" id ="inicio"> 
+		
+		<nav class = "menu_desplegable">  <!--Igual q en la principal-->
+			<section class= "menu_contenido">
+				<ul class= "menu_links"> 
+				<li class = "menu_item"> 
+					<a href = "ServicioPrueba.html" class = "menu_link" target="" title = "Página Principal">Principal</a>
+				</li>
+			
+				<li class= "menu_item menu_item--show">
+					<a href="ProbUno1.html" class="menu_link" target="" title = "Problema 1">Problema 1<img src="Imagenes/arrow.svg" alt = "" class="menu_arrow"></a>
+				
+					<ul class="menu_nesting">
+						<li class ="menu_inside">
+							<a href="#" class="menu_link menu_link--inside">Observaciones en lo cotidiano</a>
+						</li>
+						<li class ="menu_inside">
+							<a href="#" class="menu_link menu_link--inside">Teoría</a>
+						</li>
+					</ul>
+				</li>
+				<li class= "menu_item menu_item--show">
+					<a href="#" class="menu_link">Problema 2<img src="Imagenes/arrow.svg" alt = "" class="menu_arrow"></a>
+				
+					<ul class="menu_nesting">
+						<li class ="menu_inside">
+							<a href="#" class="menu_link menu_link--inside">Observaciones en lo cotidiano</a>
+						</li>
+						<li class ="menu_inside">
+							<a href="#" class="menu_link menu_link--inside">Teoría</a>
+						</li>
+					</ul>
+				</li>
+			
+				<li class = "menu_item">
+					<a href = "#" class = "menu_link">Contacto</a>
+				</li>
+			</ul>
+			
+			<div class="menu_icono"> 
+				<img src="Imagenes/menu.svg" class="menu_img">
+			</div>
+			</section>
+		</nav>
+		</header>
+		
+<main> 
+<div class = "barra-titulo">
+		<div class ="contenedor"> <!--Aquí van los textos de la cabecera -->
+			<h1 class = "P1titulo">Aleta oscilando</h1> <!--Esto lo movere a main-->
+		</div>
+		</div>
+		
+		<section class="Aletas" id="Aleta">
+		<p class ="P1Sub">Artículo: "On the forced flow around a rigid flapping foil".</p>
+		<p class ="P1sub">Autor: F. Mandujano and C. Malaga.</p>
+	<div class = "PezIm" style="text-align: center;">
+		<img src="Imagenes/Esquema problema.jpg">
+				
+	</div><div>
+			<p class ="Planteamiento" >
+Los principios para el estudio de estos individuos es el sistema de propulsión y de empuje. La segunda se puede generalizar como un movimiento ondulatorio que se propaga de la cabeza a su cola.
+Para reproducir y entender el complejo sistema de propulsión es necesario conocer las fuerzas resultantes sobre el individuo que desemboquen en su aceleración y el empuje. 
+Otro elemento importante son las famosas ecuaciones de Navier-Stokes que brindarán un entendimiento del comportamiento del fluido circundante al pez.</p>
+     <p class="ecuaciones">$\frac{\partial \vec{u}}{\partial t}+\vec{u}\cdot\nabla u=-\frac{1}{\rho_f}\nabla P + \nu \nabla^2\vec{u}$</p>
+	 <p class="ecuaciones">$\nabla \cdot u = 0$</p>
+	 <p class ="Planteamiento">Densidad de masa $\rho_f$, viscosidad cinemática  $\nu$ , $u(r)$ y $P(r)$ son los campos de velocidad y presión.
+	 Las condiciones en la superficie del pez son de no deslizamiento:</p>
+	 <p class="ecuaciones">$v_s (r_s,t) = V(t)+\dot{\theta}(t)(r_s-R)$</p>
+	 <p class ="Planteamiento">Lejos del pez existe un campo de velocidades, U, horizontal uniforme y a presión constante. </p>
+	 <p class ="Planteamiento">El estudio mediante la simulación aprovecha entender el movimiento del pez como una estructura que ondula de su cabeza a la aleta, se hace la construcción a través de un semicírculo de diámetro D pegado 
+	 a un triángulo isósceles de altura h. La distribución de densidad de masa de la lámina, $\rho_s$, se halla en el centro del semicírculo. Se estudian dos casos: con la lámina con su punto central en el 
+	 círculo fijado, y otro en el que se deja libre el mismo círculo, brindandole en este último un movimiento traslacional.</p>
+
+    <p class ="Planteamiento">La lámina aleteante rota respecto a su centro de masa.por otro lado se utilizan factores de escala para tener variables adimensionales.
+	El flujo es bidimensional, uniforme, incompresible y viscoso. Y las fronteras son infinitas. El ala nada siempre contra corriente. 
+	Como resultado del aleteo el pez irá dejando tras de sí una estela muy conocida, las calle de Von Kárman. Durante su movimiento oscilatorio tras de sí el medio será inestable configurando un arreglo de vórtices con giro invertido de la calle de von Karman. Estas interesantes estructuras están asociadas a la fuerza de empuje y propulsión. Surge un importante parámetro que se estudio en el artículo, el número de Strhoual StA, dado que la frecuencia y comportamiento de la estela está definido por dicho parámetro.
+	</p>
+
+		</div>		
+	
+
+	</section>
+				
+</main>
+	<footer id = "contacto">
+			<div class ="contenedor footer-content">
+				<div class ="Informacion">
+					<h2 class="Datos">Laboratorio de Fluidos</h2>
+					<p>Facultad de Ciencias, UNAM </p>
+					<p>Dirección </p>
+					<p>Número</p>
+				</div>
+				<div class = "Redes"> <!--Revisar esta parte-->
+				<a href ="./" class = "Redes-icon">
+					<i class='bx bxl-facebook'></i>
+				</a>
+				<a href ="./" class = "Redes-icon">
+					<i class='bx bxl-twitter' ></i>
+				</a>
+				<a href ="./" class = "Redes-icon">
+					<i class='bx bxl-instagram' ></i>
+				</a>
+				</div>
+			</div>
+			<div class = "line"></div>
+		</footer>
+	<!--enlazo los archivos ja y css-->
+	<script src="js/Java.js"> </script>
+	</body>
+</html>
+

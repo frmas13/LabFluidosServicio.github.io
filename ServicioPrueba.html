@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+		<meta charset = "utf-8" />
+		<link rel ="stylesheet" href = "CSS/PruebaOdenado.css"> <!--href es el archivo css se allá en la misma carpeta-->
+		<meta name = "autor" content = "Roxette Ramirez"/> 
+		<meta name = "Descripción" content = "Difundir el trabajo realizado en el Laboratorio de Fluidos
+		de la Facultad de Ciencias de la UNAM." />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title> Laboratorio de Fluidos</title>
+		<!-- Para añadir CSS y JavaScript a la página web se usan <link> y <script>
+		 el elemento link va dentro de head y tiene los atributos rel="stylesheet" que indica 
+		 que es la hoja de estilo del documento y "href" que contiene la ruta
+		<script> va en head e incluye los atributos src con la ruta al JavaScript	 y defer que le dice al navegador
+	que cargue Java al mismo tiempo que el HTML-->
+		<link rel = "shortcut icon" href = "Icono.ico" type = "image/x-icon" />
+		<link href = "https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet"> 
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class ="header" id ="inicio"> <!-- El elemento header contiene elementos introductorios, en este caso el menu principal y la portada agregada con CSS -->
+	<nav class = "menu_desplegable">  <!--Menú de navegación -->
+		<section class= "menu_contenido">
+			<ul class= "menu_links"> <!--ul lista no ordenada --> 
+				<li class = "menu_item"> <!--declara los elementos de la lista --> 
+					<a href = "ServicioPrueba.html" class = "menu_link">Principal</a>
+				</li>
+				
+				<li class= "menu_item menu_item--show">
+					<a href="#" class="menu_link" target="" title = "Problema 1">Problemas<img src="Imagenes/arrow.svg" alt = "" class="menu_arrow"></a>
+				
+					<ul class="menu_nesting">
+						<li class ="menu_inside menu_item menu_item--show">
+							<a href="ProbUno1.html" class="menu_link ">Ala oscilando contra corriente<img src="Imagenes/arrow.svg" alt = "" class="menu_arrow"></a>
+							<ul class="menu_nesting">
+								<li class ="menu_inside">
+								<a href="#" class="menu_link menu_link--inside">Enunciado</a>
+							
+								</li>
+								<li class ="menu_inside">
+								<a href="Teoria.html" class="menu_link menu_link--inside">Galería</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class ="menu_item">
+						<a href="Teoria.html" class="menu_link">Artículos Publicados</a>
+				</li>
+				<li class ="menu_item">
+						<a href="Teoria.html" class="menu_link ">Contacto</a>
+				</li>
+				
+				<!-- <li class= "menu_item menu_item--show"> -->
+					<!-- <a href="ProbUno1.html" class="menu_link" target="" title = "Problema 1">Problema 1<img src="Imagenes/arrow.svg" alt = "" class="menu_arrow"></a> -->
+				
+					<!-- <ul class="menu_nesting"> -->
+						<!-- <li class ="menu_inside"> -->
+							<!-- <a href="#" class="menu_link menu_link--inside">Observaciones en lo cotidiano</a> -->
+						<!-- </li> -->
+						<!-- <li class ="menu_inside"> -->
+							<!-- <a href="Teoria.html" class="menu_link menu_link--inside">Teoría</a> -->
+						<!-- </li> -->
+					<!-- </ul> -->
+				<!-- </li> -->
+				<!-- <li class= "menu_item menu_item--show"> -->
+					<!-- <a href="#" class="menu_link">Problema 2<img src="Imagenes/arrow.svg" alt = "" class="menu_arrow"></a> -->
+				
+					<!-- <ul class="menu_nesting"> -->
+						<!-- <li class ="menu_inside"> -->
+							<!-- <a href="#" class="menu_link menu_link--inside">Observaciones en lo cotidiano</a> -->
+						<!-- </li> -->
+						<!-- <li class ="menu_inside"> -->
+							<!-- <a href="#" class="menu_link menu_link--inside">Teoría</a> -->
+						<!-- </li> -->
+					<!-- </ul> -->
+				<!-- </li> -->
+			
+				
+			</ul>
+			
+			<div class="menu_icono"> <!--Esto es para acoplar al celular -->
+				<img src="Imagenes/menu.svg" class="menu_img">
+			</div>
+		</section>
+	</nav>
+</header>
+<div class = "barra-titulo">
+		<div class ="contenedor"> <!--Aquí van los textos de la cabecera -->
+			<h1 class = "titulo">Laboratorio de Fluidos, Facultad de Ciencias, UNAM</h1>
+		</div>
+	</div>	
+	
+	<main class="principal"> <!--Aquí va el contenido principal -->
+		<section class="Video_Laboratorio" id = "VideoLab">
+			<div class = "video">
+				<iframe width= "420" height = "315" src="https://www.youtube.com/embed/SawKLWT1bDA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+				clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <!--Se muestra el vídeo principal-->
+					
+			</div>
+			<div class="descripcion">
+						<p>A través del Proyecto se pretende motivar la experimentación en temas de hidrodinámica que puedan escalar posteriormente al desarrollo de investigación.</p>
+				<p>El estudio experimental se ve complementado con simulaciones numéricas de la teoría experimental donde es posible observar el fenómeno bajo condiciones ideales.</p>
+				<p>Los pilares del proyecto son el Taller de Hidrodinámica y el Laboratorio de Fluidos que se conforman por los siguientes miembros</p>
+			<ul class = "MiembrosI">
+				<li>F. Mandujano</li> 
+				<li>C. Malaga</li>
+				<li>C. Arzate</li>
+				<li>E. Vazquez</li>
+			</ul>
+			<ul class = "MiembrosII">
+				<li>C. Stern</li>
+				<li>C. Echeverría</li>
+				<li>D. Porta</li>
+			</ul>
+			</div>
+			
+		</section>
+		<!-- <div class ="Miembros"> -->
+			
+		<!-- </div> -->
+		<section class =" Anuncios ">
+			Anuncios: Cursos oofertados Semestre 
+		</section>
+				
+	</main>
+	<footer id = "contacto">
+			<div class ="footer-content">
+				<div class ="Informacion">
+					<h2 class="Datos">Laboratorio de Fluidos</h2>
+					<p>Facultad de Ciencias, UNAM </p>
+					<p>Dirección </p>
+					<p>Número</p>
+				</div>
+				<div class = "Redes"> <!--Revisar esta parte-->
+				<a href ="./" class = "Redes-icon">
+					<i class='bx bxl-facebook'></i>
+				</a>
+				<a href ="./" class = "Redes-icon">
+					<i class='bx bxl-twitter' ></i>
+				</a>
+				<a href ="./" class = "Redes-icon">
+					<i class='bx bxl-instagram' ></i>
+				</a>
+				</div>
+			</div>
+			<div class = "line"></div>
+	</footer>
+	<!--enlazo los archivos ja y css-->
+	<!-- <script src="js/Java.js"> </script> -->
+	</body>
+</html>
