@@ -10,72 +10,86 @@ body{
 }
 
 header{ /*Es la clase header que contiene la imagen Portada*/
-	height: 150px; /*Específica la altura del elemento*/
-	background-image: linear-gradient(to top, rgba(117, 209, 230, 0.2) 0%, rgba(117, 209, 230, 0.2)100%), url(../Imagenes/Portada.jpg); /*Establece la imagen de fondo*/
+	height: 15%; /*Específica la altura del elemento*/
+	background-image: linear-gradient(to top, rgba(117, 209, 230, 0.1) 0%, rgba(117, 209, 230, 0.1)100%), url(../IMG/Portada.jpg); /*Establece la imagen de fondo*/
 	background-repeat: no-repeat; /*Define como se repiten los fondos*/
 	background-size: cover; /*tamaño de las imagenes de fondo: "cover" escala la imagen al máximo sin deformarla  */
 	background-attachment: fixed; /*Indica si la posición de la imagen será fija o se desplazara con el bloque contenedor*/
-	background-position: 10% 30%; /*Define la posicion de la imagen inicial*/
+	background-position: 15% 20%; /*Define la posicion de la imagen inicial*/ 
+	/* position: relative; */
+	/*  */
+
+}
+
+
+#Contenido{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#Col1{
+	width:75%;
+	margin-top:0.5%;
+	padding-left:10% ;
+	/* background-color:#ffff55; */
+}
+
+#Col2{
+	margin-top:5%;
+	width: 25%;
+	padding-right: 10%; 
+	padding-left: 1%; 
+	/* background-color:#ffffbb; */
+}
+
+.barra-titulo{ 
+	margin-top: 10%;
+	height: 50px;
+	background: #1A202C;
+	width: 100%;
+	overflow: hidden;
+	color: #fff;
+
+}
+
+.contenedor{
+	margin-top: 1%;
+	margin-left: 10%; 
+	width: 80%;
+	/* background: green; */
+
 }
 
 .titulo{
 	font-size: 20px;
-	margin: 0.5% auto auto 1% ; 
+	margin: 0 auto auto 1% ; 
 	color: rgba(225, 225, 225, 1);
 	text-shadow:  1px 1px 2px black;
-}
-
-.copy{
-	font-weight: 600;
-	font-size:25px;
-	color: rgba(225, 225, 225, 1);
-	text-shadow:  1px 1px 2px black;
-}
-
-.subtitulo{
-	text-align: center;
-	color: rgba(225, 225, 225, 1);
-	margin-top: 80px;
-	font-size: 40px;
-	text-shadow:  1px 1px 2px black;
-}
-
-.menu_icono{
-	   padding: 0px;
-    width: 35px;
-    margin: 0px;
-    display: none;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-}
-
-.contenedor{ 
-	width: ;
-	/* max-width: 1500px;  */
-	overflow: hidden;/*Para ocultar lo que se desborde*/
-	margin-left: 150px; /*Para centrar*/
-	/* padding: 60px 0; /*Para siempre tener espaciado entre los elementos*/ */
 }
 
 .menu_desplegable{
-	position:absolute; /*sus propiedades especifican los valores respecto al flujo de la página*/
-	top: 200px; /*A partir de la parte más alta 200px*/
-	height: 20px;
-	background-color: #1A202C; /*color de fonde de un elemento*/
+	 /*sus propiedades especifican los valores respecto al flujo de la página*/
+	top:25%; 
+	height: 5%;
+	background-color: #1A202C; 
 	color: #fff;
-	width: 100%; /*establece anchira del área de contenido*/
+	width: 100%;
 	
 }
 
 .menu_contenido{
-	/* display:flex; /*visualizacion interna y externa de un elemento. "flex": display-inside -> Se comporta como elemento de bloque para el diseño de interfaces de usuario*/ */
-	justify-content:space-between; /*indica como se distribuyen, en el navegador, los items hijos entre sí y con el padre*/
-	align-items:center; /* Alineación de items: Pone horizontalmente en la esquina*/
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
 	width:90%;
-	max-width:1200px;
+	max-width:85%;
 	height: 100%; 
 	margin: 0 auto;
+}
+
+.menu_item--show{
+	background-color: var(--background);
 }
 
 .menu_links{
@@ -83,6 +97,19 @@ header{ /*Es la clase header que contiene la imagen Portada*/
 	transition: transfrom .5s; /*Es para animar la salida de elementos*/ 
 	display: flex; /* Para que los elementos se distribuyan de forma fluida: uno al lado del otro con sus items*/
 	float: left;
+}
+
+.menu_link{
+	color: rgba(164, 198, 237, 0.96);
+	text-decoration: none;
+	padding: 0 20px;
+	display:flex;
+	height: 90%;
+	align-items:center;
+}
+
+.menu_link:hover{ /*Al pasar el mouse sobre él: hover es una pseudo clase, funciona cuando el usuario interactua con el elemento x medio del mouse*/
+	background-color: rgba(0, 55, 117, 1);
 }
 
 .menu_item{
@@ -98,7 +125,6 @@ header{ /*Es la clase header que contiene la imagen Portada*/
 	--transform: rotate(0); /*Defino otra clippy*/
 }
 
-
 .menu_arrow{
 	transform: var(--transform); /*Permite manipular: rotar, escalar o trasladar: var() permite insertar el valor de a custom property*/
 	transition: transform .3s; /*trancisión entre dos estados */
@@ -106,8 +132,7 @@ header{ /*Es la clase header que contiene la imagen Portada*/
 	margin-left:3px;
 }
 
-
-.menu_nesting{ 
+.menu_nesting{
 	list-style: none;
 	transition: clip-path .3s; /*Esto permite que funcione el menu desplegable*/
 	position:absolute;
@@ -116,20 +141,7 @@ header{ /*Es la clase header que contiene la imagen Portada*/
 	bottom: 0;
 	width: max-content; /*Acomodar el texto en la caja*/
 	transform: translateY(100%); /*Despliega el menú hacia abajo*/
-	background: #000; /*enargola todas las propiedades de fondo -> aquí solo se ocupa el color*/
-} 
-
-.menu_link{
-	color: rgba(164, 198, 237, 0.96);
-	text-decoration: none;
-	padding:0 30px;
-	display:flex;
-	height: 100%;
-	align-items:center;
-}
-
-.menu_link:hover{ /*Al pasar el mouse sobre él: hover es una pseudo clase, funciona cuando el usuario interactua con el elemento x medio del mouse*/
-	background-color: rgba(0, 55, 117, 1);
+	background: #000; 
 }
 
 .menu_link--inside{
@@ -140,128 +152,147 @@ header{ /*Es la clase header que contiene la imagen Portada*/
 	background-color: #798499;
 }
 
+.Presentacion{
+	align-items:center;
+	justify-content:space-between;
+}
+
 
 .video{
-	float:left;
-	padding: 15px;
-	margin: 90px 0 auto 5%;
-	width: 40%;
+	padding: 5% 5% 5% 5%;	
 	/* background: yellow; */
-	display: flex;
 	justify-content:center ;
-
+	align-items: center;
 }
 
 .descripcion{
-	/* justify-content:center ; */
-	/* padding-bottom: 200px; */
-	height:300px ; 
-	margin: 90px 5% auto 0;
-	float: right;
-	/* display: flex; */
+	height:100%; 
+	width: 100%;
 	font-size: 1em;
 	text-align: justify;
-	width: 50%; /*Este modifica.informacion*/
 	/* background: green; */
-	vertical-align: middle;
+}
+
+.Miembros{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:center ;
 	align-items: center;
 }
 
 .MiembrosI{
 		/* background: green; */
-		margin-left: 2%;
-		/* display: flex; */
-		padding-top: 5%;
-		/* float: left; */
-		
+		padding-bottom: 5%;	
+		list-style-type: none;
+		font-size: 20px
 }
 
 .MiembrosII{
-		/* background: green; */
-		margin-left: 2%;
-		/* display: flex; */
-		padding-top: 5%;
-		/* float: right; */
+		/* background: blue; */
+		margin-left: 20%;
+		padding-bottom: 5%;
+		float: right;
+		list-style-type: none;
+		font-size: 20px
+
+}
+.Galeria{
+	background: #f2f2f2;
 }
 
-div {
-    white-space: normal;
+.contenedor-galeria{
+	display: flex;
+	justify-content:space-evenly;
+	flex-wrap: wrap;
 }
 
-section {
-    white-space: nowrap;
+.img-galeria{
+	width: 30%;
+	display: block;
+	margin-bottom: 15px;
+	box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+	cursor: pointer; 
 }
 
-footer{
-	background: #fff;
-}
-
-.Datos{ 
-	font-weight: 100;
+.Anuncios{
+	list-style-type: none;
 	font-size: 20px;
+	justify-content:space-between;
 }
 
-.Datos+p{/*por qué el +p*/
-	font-weight:100;
+.anuncios{
+	background: #f2f2f2;
+
 }
 
-.footer-content{
+footer{ /*le damos color al pie de página*/
+	background: #fff; /*fondo*/
+	padding-bottom: 0.1px;
+}
+
+.footer-content{ /*estilo para el pie de página*/
 	display: flex;
 	justify-content:space-between;
-	/* align-items:center; */
+	align-items:center;
 	flex-wrap:wrap;
-	width:100%;
-	padding-left: 20%;	
-	padding-right: 20%;	
-	padding-top: 300px;
-	padding-bottom: 20px;
-
+	padding-top: 60px;
+	padding-bottom: 40px;
+	padding-left: 10%;	
+	padding-right: 10%;	
 }
 
 .Informacion{
-	align-items: left;
-	color: rgba(0, 0, 0, 1);
-	/* width: 100%; */
+	width: 70%;
+	color: #000;
 }
 
+.Datos{
+	font-weight: 300;
+	/* background: green; */
+	justify-content: center;
+}
+
+.Datos+p{
+	font-weight:300;
+}
+
+
 .Redes{
-	width:20%;
+	width:30%;
 	display:flex;
 	justify-content:flex-end;
 }
 
 .Redes-icon{
 	display: inline-block;
-	margin-left: 50px;
+	margin-left: 20px;
 	width: 60px;
-	height:30px;
+	height:60px;
 	border-radius: 50%;
 	text-align:center;
-	color:rgba(68, 59, 237, 1);
+	color: #000;
 }
 
 .Redes-icon:hover{
-	background: rgba(0, 0, 0, 1);
-	color: #764ba2;
+	background: DodgerBlue;
+	color: #000;
 }
 
 .Redes-icon i{
 	font-size: 30px;
-	line-height: 30px;
-}
-
-.barra-titulo{
-	/* margin-top:20% ; */
-	height: 70px;
-	background: #1A202C;
+	line-height: 60px;
 }
 
 .line{
+	width: 90%;
 	max-width:1200px;
-	margin: 0 auto 10px auto;
+	margin: 0 auto;
 	height: 2px;
-	background: rgba(0, 0, 0, 1);
+	background: #000;
+	margin-bottom: 60px;
 }
+
 /* Esto corresponde al Problema 1*/
 .PezIm{
 	transform: scale(0.7);
@@ -278,14 +309,14 @@ footer{
 }
 
 .P1titulo{
-	font-size: 20px;
-	margin: 0.5% auto auto 1% ; 
+	font-size: 25px;
+	margin: 0 auto 0 1% ; 
 	color: rgba(225, 225, 225, 1);
 	text-shadow:  1px 1px 2px black;
 	
 }
 .P1Sub{
-	margin: 100px 200px 10px 200px;
+	margin: 1% 0 10px 10%;
 	font-weight: 500;
 	font-size:25px;
 	color: #33475b;
@@ -293,10 +324,10 @@ footer{
 }
 
 .P1sub{
-	margin: 10px 200px 10px 200px;
-	font-weight: 200;
+	margin: 1% 0 10px 10%;
+	font-weight: 500;
 	font-size:15px;
-	color: rgba(0,0,0, 1);
+	color: #33475b;
 }
 
 .Planteamiento{
@@ -322,16 +353,5 @@ footer{
 	/* padding: 2px; */
 }
 
-.footer-contentP1{
-	display: flex;
-	justify-content:space-between;
-	align-items:center;
-	flex-wrap:wrap;
-	width:80%;
-	padding-left: 10%;	
-	padding-right: 10%;	
-	padding-top: 200px;
-	padding-bottom: 20px;
-	/* background: green; */
-}
+
 
