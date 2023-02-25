@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 		<meta charset = "utf-8" />
-		<link rel ="stylesheet" href = "CSS/PruebaOrdenado.css"> <!--href es el archivo css se allá en la misma carpeta-->
+		<link rel ="stylesheet" href = "CSS/PPrincipal.css"> <!--href es el archivo css se allá en la misma carpeta-->
 		<meta name = "autor" content = "Roxette Ramirez"/> 
 		<meta name = "Descripción" content = "Difundir el trabajo realizado en el Laboratorio de Fluidos
 		de la Facultad de Ciencias de la UNAM." />
-		<title> P1: Teoría</title>
+		<title> Ala oscilando</title>
 		<link rel = "shortcut icon" href = "Icono.ico" type = "image/x-icon" />
 		<link href = "https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet"> 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,30 +24,31 @@
     </script>    
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
 </head>
-<body>
+	
+	<body>
 		<header class ="header" id ="inicio"> 
 		
 		<nav class = "menu_desplegable">  <!--Igual q en la principal-->
 			<section class= "menu_contenido">
 				<ul class= "menu_links"> 
 				<li class = "menu_item"> 
-					<a href = "ServicioPrueba.html" class = "menu_link" target="" title = "Página Principal">Principal</a>
+					<a href = "PagPrincipal.html" class = "menu_link">Principal</a>
 				</li>
 			
 				<li class= "menu_item menu_item--show">
-					<a href="ProbUno1.html" class="menu_link" target="" title = "Problema 1">Problema 1<img src="Imagenes/arrow.svg" alt = "" class="menu_arrow"></a>
+					<a href="ProbUno.html" class="menu_link">Problema 1<img src="IMG/arrow.svg" alt = "" class="menu_arrow"></a>
 				
 					<ul class="menu_nesting">
 						<li class ="menu_inside">
 							<a href="#" class="menu_link menu_link--inside">Observaciones en lo cotidiano</a>
 						</li>
 						<li class ="menu_inside">
-							<a href="#" class="menu_link menu_link--inside">Teoría</a>
+							<a href="Teoria.html" class="menu_link menu_link--inside">Teoría</a>
 						</li>
 					</ul>
 				</li>
 				<li class= "menu_item menu_item--show">
-					<a href="#" class="menu_link">Problema 2<img src="Imagenes/arrow.svg" alt = "" class="menu_arrow"></a>
+					<a href="#" class="menu_link">Problema 2<img src="IMG/arrow.svg" alt = "" class="menu_arrow"></a>
 				
 					<ul class="menu_nesting">
 						<li class ="menu_inside">
@@ -65,24 +66,25 @@
 			</ul>
 			
 			<div class="menu_icono"> 
-				<img src="Imagenes/menu.svg" class="menu_img">
+				<img src="IMG/menu.svg" class="menu_img">
 			</div>
 			</section>
 		</nav>
-		</header>
-		
-<main> 
-<div class = "barra-titulo">
+		<div class = "barra-titulo">
 		<div class ="contenedor"> <!--Aquí van los textos de la cabecera -->
-			<h1 class = "P1titulo">Aleta oscilando</h1> <!--Esto lo movere a main-->
+			<h1 class = "P1titulo">Aletas en movimiento</h1> <!--Esto lo movere a main-->
 		</div>
-		</div>
-		
-		<section class="Aletas" id="Aleta">
+	</div>
+	</header>
+	
+	<main id = "Contenido"> 
+	
+	<section class="Presentacion" id = "Col1">
+	<section class="Aletas" id="Aleta">
 		<p class ="P1Sub">Artículo: "On the forced flow around a rigid flapping foil".</p>
 		<p class ="P1sub">Autor: F. Mandujano and C. Malaga.</p>
 	<div class = "PezIm" style="text-align: center;">
-		<img src="Imagenes/Esquema problema.jpg">
+		<img src="IMG/Esquema problema.jpg">
 				
 	</div><div>
 			<p class ="Planteamiento" >
@@ -108,10 +110,19 @@ Otro elemento importante son las famosas ecuaciones de Navier-Stokes que brindar
 	
 
 	</section>
-				
-</main>
+	</section>
+		<section id = "Col2">
+			<h4>Anuncios: Propuestas de trabajo</h4>
+			<ul class =" Anuncios">
+				<li> <a href="#" class="Opc1">Aleta oscilante </a></li>
+				<li> <a href="#" class="Opc1">Flujo alrededor del cilindro</a></li>
+				<li> <a href="#" class="Opc1">Ola</a></li>
+			</ul>
+			
+		</section>		
+	</main>
 	<footer id = "contacto">
-			<div class ="contenedor footer-content">
+			<div class ="footer-content">
 				<div class ="Informacion">
 					<h2 class="Datos">Laboratorio de Fluidos</h2>
 					<p>Facultad de Ciencias, UNAM </p>
@@ -136,4 +147,3 @@ Otro elemento importante son las famosas ecuaciones de Navier-Stokes que brindar
 	<script src="js/Java.js"> </script>
 	</body>
 </html>
-
