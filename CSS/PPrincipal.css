@@ -36,11 +36,25 @@ header{ /*Es la clase header que contiene la imagen Portada*/
 }
 
 #Col2{
-	margin-top:5%;
+	margin: 5% 0px 0px 0px; /* Modifique el formato de margen por si se necesitan hacer cambios diferentes de este*/
 	width: 25%;
-	padding-right: 10%; 
+	padding-right: 0%; /* Disminui de 5 a 0*/
 	padding-left: 1%; 
 	/* background-color:#ffffbb; */
+	border-left: solid 1px rgb(0,0,0);
+}
+
+/* agrego margen */
+#Col2 h4{
+	margin: 0px 10px 6px 0px;
+}
+
+/* Linea debajo de titulo*/
+#Col2 .DatosBarra{
+	width: 76%;
+    height: 3px;
+    background: rgb(26 32 44);
+    margin: 5px 0px;
 }
 
 .barra-titulo{ 
@@ -57,19 +71,18 @@ header{ /*Es la clase header que contiene la imagen Portada*/
 	margin-top: 1%;
 	margin-left: 10%; 
 	width: 80%;
-	/* background: green; */
+	background: green;
 
 }
 
 .titulo{
 	font-size: 20px;
-	margin: 0 auto auto 1% ; 
 	color: rgba(225, 225, 225, 1);
 	text-shadow:  1px 1px 2px black;
+	margin: 0 auto auto 15% ;
 }
 
 .menu_desplegable{
-	 /*sus propiedades especifican los valores respecto al flujo de la página*/
 	top:25%; 
 	height: 5%;
 	background-color: #1A202C; 
@@ -197,6 +210,7 @@ header{ /*Es la clase header que contiene la imagen Portada*/
 		font-size: 20px
 
 }
+
 .Galeria{
 	background: #f2f2f2;
 }
@@ -215,16 +229,11 @@ header{ /*Es la clase header que contiene la imagen Portada*/
 	cursor: pointer; 
 }
 
-.Anuncios{
+.Anuncios li{
 	list-style-type: none;
-	font-size: 20px;
-	justify-content:space-between;
+	margin-top:10px;
 }
 
-.anuncios{
-	background: #f2f2f2;
-
-}
 
 footer{ /*le damos color al pie de página*/
 	background: #fff; /*fondo*/
@@ -294,18 +303,34 @@ footer{ /*le damos color al pie de página*/
 }
 
 /* Esto corresponde al Problema 1*/
+
 .PezIm{
-	transform: scale(0.7);
-	padding: 10px; 
+	transform: scale(50%);
+	padding: 5%; 
 	/* background: green; */
+}
+
+.PezEsq{
+	/*transform: scale(45%);
+	/* overflow: scroll; */
+	background: rgba(0,0,0,0);
+	position: relative;
+	top: 0px;
+	left: 0px;
 
 }
 
+.PezEsq img{
+		width: 75%; 	
+}
+
 .Ejimg{
-	/* transform: scale(0.2); */
+	/* transform: scale(100%); */
 	text-align:center;
 	align-items: center;
-	padding: 10px; 
+	/* padding: 10px;  */
+	background: green;
+
 }
 
 .P1titulo{
@@ -316,11 +341,14 @@ footer{ /*le damos color al pie de página*/
 	
 }
 .P1Sub{
-	margin: 1% 0 10px 10%;
+	margin: 1% 0px 0px 0%;/* Disminui los margenes exteriores, estos eran los originales:  1% 0px 10px 10%*/
+	padding: 4px 11px; /* Border interno para mejorar el aspecto del titulo*/
 	font-weight: 500;
-	font-size:25px;
+	font-size: 25px;
 	color: #33475b;
+	text-align: center;/* Centro titulo de articulo */
 	text-shadow:  1px 1px 2px black;
+	background: rgba(0,0,0,0);/* Le quito color de fondo */
 }
 
 .P1sub{
@@ -328,15 +356,15 @@ footer{ /*le damos color al pie de página*/
 	font-weight: 500;
 	font-size:15px;
 	color: #33475b;
+	/*border-bottom: solid 2px rgba(0,0,0,1); /* Border de tipo linea para separar titulo del documento*/
 }
 
 .Planteamiento{
-	margin: auto 20% 0 20%;
+	margin: 0 5% 1% 10%;
 	height:50% ; 
 	font-size: 1em;
 	text-align:justify;
 	justify-content:space-between;
-    display: flex;
 	padding: 20px;
 	/* background: green; */
 
@@ -348,9 +376,6 @@ footer{ /*le damos color al pie de página*/
 	font-size: 1em;
 	text-align:justify;
 	text-align:center;
-	/* justify-content:space-between; */
-    /* display: flex; */
-	/* padding: 2px; */
 }
 
 
