@@ -1,0 +1,19 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+header{ /*Es la clase header que contiene la imagen Portada*/
+	height: 50%; /*Específica la altura del elemento*/
+	background-image: linear-gradient(to top, rgba(117, 209, 230, 0.2) 0%, rgba(117, 209, 230, 0.2)100%), url(../IMG/Portada.jpg); /*Establece la imagen de fondo*/
+	background-repeat: no-repeat; /*Define como se repiten los fondos*/
+	background-size: cover; /*tamaño de las imagenes de fondo: "cover" escala la imagen al máximo sin deformarla  */
+	background-attachment: fixed; /*Indica si la posición de la imagen será fija o se desplazara con el bloque contenedor*/
+	background-position: 10% 30%; /*Define la posicion de la imagen inicial*/
+}
