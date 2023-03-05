@@ -25,18 +25,8 @@
 					<li class = "menu_item"> 
 						<a href = "PagPrincipal.html" class = "menu_link">Principal</a>
 					</li>
-				
-					<li class= "menu_item menu_item--deslizar">
-						<a href="#" class="menu_link" target="" title = "Problema 1">Problemas<img src="IMG/arrow.svg" alt = "" class="menu_arrow"></a>
-				
-						<ul class="menu_nesting">
-							<li class ="menu_inside">
-							<a href="ProbUno.html" class="menu_link menu_link--inside ">Ala oscilando contra corriente</a>
-							</li>
-							<li class ="menu_inside">
-							<a href="ProbUno1.html" class="menu_link menu_link--inside ">Problema 2</a>
-							</li>
-						</ul>
+					<li class ="menu_item">
+						<a href="Galeria.html" class="menu_link">Galeria</a>
 					</li>
 					<li class ="menu_item">
 						<a href="ArtPublicados.html" class="menu_link">Artículos Publicados</a>
@@ -49,13 +39,88 @@
 		</nav>
 
 	</header>
-
-	<main id = "Contenido">
+	<main>
+	
+	<section class = "Galeria">
+			<div class="Carousel">
+        <div class="slick-list" id="slick-list">
+            <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
+				<svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path></svg>            </button>
+            <div class="slick-track" id="track">
+                <div class="slick">
+                    <div>
+                        <a href="ProbUno.html">
+                            <h4><small>Aleta oscilando</small>Ver más</h4>
+                            <picture>
+                                <img src="IMG/Galeria/Gal01.jpg" alt="Imagen del Problema">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="ProbUno.html">
+                            <h4><small>Flujo alrededor de un cilindro</small>Ver más</h4>
+                            <picture>
+                                <img src="IMG/Galeria/Gal02.jpg" alt="Imagen del Problema">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4><small>P3</small>Ver más</h4>
+                            <picture>
+                                <img src="IMG/Galeria/Gal03.jpg" alt="Imagen del Problema">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="ProbUno.html">
+                            <h4><small>P4</small>Ver más</h4>
+                            <picture>
+                                <img src="IMG/Galeria/Gal01.jpg" alt="Imagen del Problema">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4><small>P5</small>Ver más</h4>
+                            <picture>
+                                <img src="IMG/Galeria/Gal01.jpg" alt="Imagen del Problema">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4><small>P6</small>Ver más</h4>
+                            <picture>
+                                <img src="IMG/Galeria/Gal01.jpg" alt="Imagen del Problema">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
+				<svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
+            </button>
+        </div>
+			</section>
+	
+	<section id = "Contenido">
 		<section class="Presentacion" id = "Col1">
 			<div class = "video" style="text-align: center;">
 				<iframe width= "420" height = "315" src="https://www.youtube.com/embed/SawKLWT1bDA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
 					clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <!--Se muestra el vídeo principal-->
 				<div class="descripcion">
+				<!-- <video src="#" controls preload = "auto"></video> -->
 				<p>A través del Proyecto se pretende motivar la experimentación en temas de hidrodinámica que puedan escalar posteriormente al desarrollo de investigación.</p>
 				<p>El estudio experimental se ve complementado con simulaciones numéricas de la teoría experimental donde es posible observar el fenómeno bajo condiciones ideales.</p>
 				<p>Los pilares del proyecto son el Taller de Hidrodinámica y el Laboratorio de Fluidos que se conforman por los siguientes miembros</p>
@@ -75,21 +140,11 @@
 			</ul>
 			</div>
 			
-			<section class = "Galeria">
-			<div class = "Cajas">
-				<h2 class="subtitulo">Galeria</h2>
-				<div class="contenedor-galeria">
-					<img src = "IMG/Galeria/uno.jpg" alt = "" class="img-galeria">
-					<img src = "IMG/Galeria/dos.jpg" alt = "" class="img-galeria" >
-					<img src = "IMG/Galeria/tres.jpg" alt = "" class="img-galeria">
-					<img src = "IMG/Galeria/cuatro.jpg" alt = "" class="img-galeria">
-				</div>
-			</div>
-			</section>
+			
 		</section>
 		
 		<aside  id = "Col2">
-			<h3>Propuestas de trabajo</h3>
+			<h3>Propuestas de Proyectos</h3>
 			<hr class="DatosBarra">
 			<ul class ="Anuncios"  >
 				<li><a href="#" class="Opc">Aleta oscilante </a>
@@ -98,7 +153,31 @@
 				<li><a href="#" class="Opc">Ola</a></li>
 			</ul>
 			
+			<h3>Problemas Resueltos</h3>
+			<hr class="DatosBarra">
+			<ul class ="Anuncios"  >
+				<li><a href="ProbUno.html">Ala oscilando contra corriente </a>
+					<ul class = "subtema">
+						<li>
+						<a href = "PUnoTeoria.html">Teoría</a>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#" class="Opc">Flujo alrededor del cilindro</a></li>
+				<ul class = "subtema">
+						<li>
+						<a href = "PUnoTeoria.html">Teoría</a>
+						</li>
+					</ul>
+				<li><a href="#" class="Opc">Ola</a></li>
+				<ul class = "subtema">
+						<li>
+						<a href = "PUnoTeoria.html">Teoría</a>
+						</li>
+					</ul>
+			</ul>
 		</aside>
+		</section>
 	</main>
 	<footer id = "contacto">
 		<div class ="footer-content">
@@ -116,6 +195,7 @@
 		</div>
 		<div class = "line"></div>
 	</footer>
+<script defer src="JS/main.js"></script>
 </body>
 
 
