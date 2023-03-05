@@ -114,7 +114,7 @@ header{ /*Es la clase header que contiene la imagen Portada*/
 	transition: transfrom .5s; /*Es para animar la salida de elementos*/ 
 	display: flex; /* Para que los elementos se distribuyan de forma fluida: uno al lado del otro con sus items*/
 	float: left;
-	z-index: 1
+	z-index: 1;
 }
 
 .menu_link{
