@@ -465,7 +465,7 @@ footer{ /*le damos color al pie de página*/
     min-height: 150px;
     font-size: 16px;
     line-height: 50px;
-    border-radius: 25px;
+    border-radius: 10px;
     background-color: #f1f1f1;
 	margin: 15px 10px;
 }
