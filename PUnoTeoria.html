@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset = "UTF-8">
-	<meta name ="viewport" content = "width = device-width, initial-scale=1.0">
-	<link rel ="stylesheet" href = "CSS/PPrincipal.css">
-	<link rel ="stylesheet" href = "CSS/lightbox.min.css">
-	<meta name = "autor" content = "Roxette Ramirez"/> 
-	<meta name = "Descripción" content = "Difundir el trabajo realizado en el Laboratorio de Fluidos
+		<meta charset = "utf-8" />
+		<link rel ="stylesheet" href = "CSS/PPrincipal.css"> <!--href es el archivo css se allá en la misma carpeta-->
+		<meta name = "autor" content = "Roxette Ramirez"/> 
+		<meta name = "Descripción" content = "Difundir el trabajo realizado en el Laboratorio de Fluidos
 		de la Facultad de Ciencias de la UNAM." />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title> Laboratorio de Fluidos</title>
-	<link rel = "shortcut icon" href = "Icono.ico" type = "image/x-icon" />
-	<link href = "https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet"> 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-	
-	<script type = "text/javascript" src = "js/lightbox-plus-jquery.min.js"></script>
-	<link rel ="stylesheet" href = "CSS/lightbox.min.css">
+		<title> Ala oscilando</title>
+		<link rel = "shortcut icon" href = "Icono.ico" type = "image/x-icon" />
+		<link href = "https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet"> 
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+		<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      extensions: ["tex2jax.js"],
+      "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
+      tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+      TeX: { noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+      messageStyle: "none"
+    });
+    </script>    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
 </head>
-
-<body>
-	<header class ="header" id ="inicio"> 
-		<nav class = "menu_desplegable" id = "menu"> 
+	
+	<body>
+		<header class ="header" id ="inicio"> 
+		
+		<nav class = "menu_desplegable">  <!--Igual q en la principal-->
 			<section class= "menu_contenido">
-				<h1 class = "P1titulo">Aletas en movimiento</h1>
-				<ul class = "menu_links">  
-					<li class = "menu_item"> 
-						<a href = "PagPrincipal.html" class = "menu_link">Principal</a>
-					</li>
-				
-					<li class= "menu_item menu_item--deslizar">
-						<a href="ProbUno" class="menu_link" target="" title = "Problema">Problema 1<img src="IMG/arrow.svg" alt = "" class="menu_arrow"></a>
+			<h1 class = "P1titulo">Aletas en movimiento</h1>
+				<ul class= "menu_links"> 
+				<li class = "menu_item"> 
+					<a href = "PagPrincipal.html" class = "menu_link">Principal</a>
+				</li>
+			
+				<li class= "menu_item menu_item--deslizar">
+						<a href="ProbUno" class="menu_link" target="" title = "Problema 1">Problema<img src="IMG/arrow.svg" alt = "" class="menu_arrow"></a>
 				
 						<ul class="menu_nesting">
 							<li class ="menu_inside">
@@ -42,25 +48,28 @@
 							</li>
 						</ul>
 					</li>
-					<li class ="menu_item">
+				<li class ="menu_item">
 						<a href="Galeria.html" class="menu_link">Galeria</a>
 					</li>
 					<li class ="menu_item">
 				<li class ="menu_item">
 						<a href="ArtPublicados.html" class="menu_link">Artículos Publicados</a>
 					</li>
-					<li class ="menu_item"><a href="Contacto.html" class="menu_link ">Contacto</a>
-					</li>
-				</ul>
+				<li class = "menu_item">
+					<a href = "Contacto.html" class = "menu_link">Contacto</a>
+				</li>
+			</ul>
 			
+			<div class="menu_icono"> 
+				<img src="IMG/menu.svg" class="menu_img">
+			</div>
 			</section>
 		</nav>
-		
 	</header>
 	
+	<main id = "Contenido"> 
 	
-	<main id = "Contenido">
-		<section class="Presentacion" id = "Col1">
+	<section class="Presentacion" id = "Col1">
 	<section class="Aletas" id="Aleta">
 		<p class ="P1Sub">Artículo: "On the forced flow around a rigid flapping foil".</p>
 		<p class ="P1sub">Autor: F. Mandujano and C. Malaga.</p>
@@ -128,26 +137,31 @@ Otro elemento importante son las famosas ecuaciones de Navier-Stokes que brindar
 						</li>
 					</ul>
 			</ul>
-			
-		</section>
+		</section>		
 	</main>
 	<footer id = "contacto">
-		<div class ="footer-content">
-			<div class ="Informacion">
-				<h2 class="Datos">Laboratorio de Fluidos</h2>
-				<p>Facultad de Ciencias, UNAM </p>
-				<p>Dirección </p>
-				<p>Número</p>
+			<div class ="footer-content">
+				<div class ="Informacion">
+					<h2 class="Datos">Laboratorio de Fluidos</h2>
+					<p>Facultad de Ciencias, UNAM </p>
+					<p>Dirección </p>
+					<p>Número</p>
+				</div>
+				<div class = "Redes"> <!--Revisar esta parte-->
+				<a href ="./" class = "Redes-icon">
+					<i class='bx bxl-facebook'></i>
+				</a>
+				<a href ="./" class = "Redes-icon">
+					<i class='bx bxl-twitter' ></i>
+				</a>
+				<a href ="./" class = "Redes-icon">
+					<i class='bx bxl-instagram' ></i>
+				</a>
+				</div>
 			</div>
-			<div class = "Redes">
-				<a href ="./" class = "Redes-icon"><i class='bx bxl-facebook'></i></a>
-				<a href ="./" class = "Redes-icon"><i class='bx bxl-twitter' ></i></a>
-				<a href ="./" class = "Redes-icon"><i class='bx bxl-instagram' ></i></a>
-			</div>
-		</div>
-		<div class = "line"></div>
-	</footer>
-</body>
-
-
+			<div class = "line"></div>
+		</footer>
+	<!--enlazo los archivos ja y css-->
+	<script src="js/Java.js"> </script>
+	</body>
 </html>
