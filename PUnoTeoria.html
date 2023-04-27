@@ -61,43 +61,40 @@
 	
 	<main id = "Contenido">
 		<section class="Presentacion" id = "Col1">
-			<section class="Aletas" id="Aleta">
+	<section class="Aletas" id="Aleta">
 		<p class ="P1Sub">Artículo: "On the forced flow around a rigid flapping foil".</p>
 		<p class ="P1sub">Autor: F. Mandujano and C. Malaga.</p>
 		<a href = "VonKarman.pdf"><p class ="P1sub">Acceder al artículo <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAXBJREFUSEvtl4ExRDEQhr+rgA7oAB1QAR2gAyqgA6MCSqADKqADpwMqYD6TnQmXd5c8uTlmLjNv5l6yybf/Jm83N2FFbbIiLvPAR8BOpWNvwHWl7ZfZEPgWOG5ZCHDOae2cIbAKNmoXyeyq4UPgjwboOXCZOVoF7wE+AIzQQwu8F1jobgu8J9jdqYb3BlfDlwEuwWc4PcDP6XD9/BC2AZ9ivugBrvnylqJ4DS5F4P+E+hU4SxJMDifAFvCe8vM09R0mm/tUpXw1Z0ehaVb8COynVHgH+LwAeylLCbQU2m++1smr5IT1PNpocFQrF1CJyqN0Wp38rXqdvChs8q/AhncTMGEY9gCr2EQRhSIU5/zRYOut4RR4A1gKdUKgEXhKDumE0XAsV94MNnwu7EKGUXA0+1XtXkZq1F4HbXEo1ymzXDVSmFruXItydRzKb3Y9r7dDDnjfzvd7rmIHPTT5YVqkrDQeh3Nm7E/+hRmjsHrOJ69uXB92fFbfAAAAAElFTkSuQmCC"/></p></a>
-		<figure class = "galeriaGif">
-				<a href="VIDEOS/gif02.gif" data-lightbox = "mygallery">
-				<img src="VIDEOS/gif02.gif"> </a>
-				<a href="VIDEOS/gif01.gif" data-lightbox = "mygallery">
-				<img src="VIDEOS/gif01.gif"> </a>
-				
-		</figure>
-		<div>
-			<p class ="Planteamiento" >La locomoción de los peces y los mecanismos de vuelo en las aves son un problema de Mecánica que ha sido estudiado ampliamente debido a la importancia que puede suponer su correcto entendimiento. 
-			Desde el enfoque biológico hasta sus aplicaciones en la industria.</p>
-			<p class ="Planteamiento" >Se parte de entender el sistema de propulsión y de empuje. El estudio vía un entorno simulado generaliza las contracciones musculares de un pez
-			con un movimiento ondulatorio que se propagan de la cabeza a la cola del sujeto de estudio. Para reproducir y entender el complejo sistema es necesario conocer las fuerzas resultantes sobre el individuo.
-			</p><p class ="Planteamiento">Un resultado interesante del aleteo del pez es la estela que irá dejando tras de sí, las calles de Von Kárman invertidas. Un comportamiento fácil de observar en nuestro entorno, por ejemplo en
-			un arroyo o	la atmosfera. Y son producidas por la diferencia de presión en la interacción de las capas más cercanas a la zona superficial del objeto de estudio.
-			Estas interesantes estructuras se asocian a la fuerza de empuje y propulsión. </p>
+
+	<figure class = "PezEsq" style="text-align: center;">
+		<img src="IMG/EsquemaProblema.jpg">
+	</figure>
+	
+	<div>
+			<p class ="Planteamiento" >
+Los principios para el estudio de estos individuos es el sistema de propulsión y de empuje. El empuje se puede generalizar como un movimiento ondulatorio que se propaga de la cabeza a su cola.
+Para reproducir y entender el complejo sistema de propulsión es necesario conocer las fuerzas resultantes sobre el individuo que desemboquen en su aceleración. 
+Otro elemento importante son las famosas ecuaciones de Navier-Stokes que brindarán un entendimiento del comportamiento del fluido circundante al pez.</p>
+     <p class="ecuaciones">$\frac{\partial \vec{u}}{\partial t}+\vec{u}\cdot\nabla u=-\frac{1}{\rho_f}\nabla P + \nu \nabla^2\vec{u}$</p>
+	 <p class="ecuaciones">$\nabla \cdot u = 0$</p>
+	 <p class ="Planteamiento">Densidad de masa $\rho_f$, viscosidad cinemática  $\nu$ , $u(r)$ y $P(r)$ son los campos de velocidad y presión.
+	 Las condiciones en la superficie del pez son de no deslizamiento:</p>
+	 <p class="ecuaciones">$v_s (r_s,t) = V(t)+\dot{\theta}(t)(r_s-R)$</p>
+	 <p class ="Planteamiento">Lejos del pez existe un campo de velocidades, U, horizontal uniforme y a presión constante. </p>
+	 <p class ="Planteamiento">El estudio mediante la simulación aprovecha entender el movimiento del pez como una estructura que ondula de su cabeza a la aleta, se hace la construcción a través de un semicírculo de diámetro D pegado 
+	 a un triángulo isósceles de altura h. La distribución de densidad de masa de la lámina, $\rho_s$, se halla en el centro del semicírculo. Se estudian dos casos: con la lámina con su punto central en el 
+	 círculo fijado, y otro en el que se deja libre el mismo círculo, brindandole en este último un movimiento traslacional.</p>
+
+    <p class ="Planteamiento">La lámina aleteante rota respecto a su centro de masa.
+	El flujo es bidimensional, uniforme, incompresible y viscoso. Las fronteras son infinitas y la ala nada siempre contra corriente. 
+	Como resultado del aleteo el pez irá dejando tras de sí una estela muy conocida, las calle de Von Kárman. Durante su movimiento oscilatorio tras de sí el medio será inestable configurando un arreglo de vórtices con giro invertido de la calle de von Karman. Estas interesantes estructuras están asociadas a la fuerza de empuje y propulsión. Surge un importante parámetro que se estudio en el artículo, el número de Strhoual StA, dado que la frecuencia y comportamiento de la estela está definido por dicho parámetro.
+	</p>
 
 		</div>		
-		<figure class = "galeria">
-				<a href="IMG/Galeria/Gal01.jpg" data-lightbox = "mygallery">
-					<img src="IMG/Galeria/Gal01.jpg"></a>
-				<a href="IMG/Galeria/Gal02.jpg" data-lightbox = "mygallery">
-					<img src="IMG/Galeria/Gal02.jpg"></a>
-				<a href="IMG/Galeria/Gal03.jpg" data-lightbox = "mygallery">
-					<img src="IMG/Galeria/Gal03.jpg"></a>
-				
-		</figure>
 	
 
-			</section>
-		</section>
-		<!-- <div class ="Miembros"> -->
-			
-		<!-- </div> -->
+	</section>
+	</section>
 		<section id = "Col2">
 			<h3>Propuestas de Proyectos</h3>
 			<hr class="DatosBarra">
