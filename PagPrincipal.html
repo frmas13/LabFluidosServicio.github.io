@@ -21,10 +21,21 @@
 		<nav class = "menu_desplegable" id = "menu"> 
 			<section class= "menu_contenido">
 			<h1 class = "titulo">Laboratorio de Fluidos, Facultad de Ciencias, UNAM</h1>
-				<ul class = "menu_links">  
+				<ul class = "menu_links">
 					<li class = "menu_item"> 
 						<a href = "PagPrincipal.html" class = "menu_link">Principal</a>
 					</li>
+					<li class = "menu_item  menu_item--show"> 
+						<a href = "PagPrincipal.html" class = "menu_link">Proyectos en curso<img src="Imagenes/arrow.svg" alt = "" class="menu_arrow"></a>
+						<ul class="menu_nesting">
+							<li class ="menu_inside">
+								<a href = "Docencia.html" class = "menu_link menu_link--inside">Docencia</a>
+							</li>
+							<li class ="menu_inside">
+								<a href = "Investigación.html" class = "menu_link menu_link--inside">Investigación</a>
+							</li>
+						</ul>
+					</li> 
 					<li class ="menu_item">
 						<a href="Galeria.html" class="menu_link">Galeria</a>
 					</li>
@@ -51,7 +62,7 @@
                     <div>
                         <a href="ProbUno.html">
                             <h4><small>Aleta oscilando</small>Ver más</h4>
-                            <picture>
+							<picture>
                                 <img src="IMG/Galeria/Gal01.jpg" alt="Imagen del Problema">
                             </picture>
                         </a>
@@ -60,7 +71,7 @@
                 <div class="slick">
                     <div>
                         <a href="ProbUno.html">
-                            <h4><small>P2</small>Ver más</h4>
+                            <h4><small>Flujo alrededor de un cilindro</small>Ver más</h4>
                             <picture>
                                 <img src="IMG/Galeria/Gal02.jpg" alt="Imagen del Problema">
                             </picture>
@@ -117,13 +128,15 @@
 	<section id = "Contenido">
 		<section class="Presentacion" id = "Col1">
 			<div class = "video" style="text-align: center;">
+				<!-- <iframe width= "420" height = "315" src="https://www.youtube.com/embed/SawKLWT1bDA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;  -->
+					<!-- clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
 				<video src = "VIDEOS/Pel01.mp4#t=13" width = "80%" controls preload = "auto" autoplay></video>
 
 				<div class="descripcion">
 				<!-- <video src="#" controls preload = "auto"></video> -->
 				<p>A través del Proyecto se pretende motivar la experimentación en los alumnos en temas de hidrodinámica que posteriormente puedan escalar al desarrollo de investigación.</p>
 				<p>El estudio experimental se ve complementado con simulaciones numéricas donde es posible dibujar el fenómeno bajo condiciones ideales.</p>
-				<p>Los pilares del proyecto son el Taller de Hidrodinámica y el Laboratorio de Fluidos, conformados por los siguientes miembros</p>
+				<p>Los pilares del proyecto son el Taller de Hidrodinámica y el Laboratorio de Fluidos conformados por los siguientes miembros</p>
 				</div>	
 			</div>
 			<div class = "Miembros">
