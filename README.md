@@ -1,4 +1,4 @@
-# LabFluidosServicio.github.io
+# Laboratorio de Fluidos de la Facultad de Ciencias.
 
 Versión beta para la página de difusión del Laboratorio de Fluidos de la Facultad de Ciencias de la UNAM.
 
