@@ -7,3 +7,4 @@ De esta forma se incentiva a los alumnos a colaborar en futuros proyectos de inv
 Los recursos que se comparten en la página son simulaciones, vídeos experimentales y artículos publicados. Todo el material se ha desarrollado por estudiantes y profesores adjuntos al laboratorio.
 Además, compartir recursos útiles den el área para los cursos que se imparten semestralmente.
 
+Este trabajo ha sido desarrollado como parte del Servicio Social.
