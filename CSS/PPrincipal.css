@@ -509,7 +509,6 @@ footer{ /*le damos color al pie de página*/
 h4, h2,small,a{
     margin: 0;
     padding-right: 5px;
-	z-index: 1;
 }
 a{
     text-decoration: none;
@@ -552,7 +551,6 @@ a{
 }
 .slick h4{
     position: absolute;
-    z-index: 1;
     font-size: 22px;
     line-height: 23px;
     color: #fff;
