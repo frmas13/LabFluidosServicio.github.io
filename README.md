@@ -15,6 +15,6 @@ A continuación se indica cómo editar el contenido:
 Se puede acceder al menú principal:
 ■ Artículos Publicados
 ■ Proyectos en curso
-$\begin{bmatrix} u\\e \end{bmatrix}  \sim 
-N (\begin{bmatrix}0\\0\end{bmatrix},
-\begin{bmatrix} G(\sigma_g) &0\\ 0 &R(\sigma_{\gamma})\end{bmatrix})$
+```math
+begin{bmatrix}X\\Y\end{bmatrix}
+```
