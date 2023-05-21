@@ -12,3 +12,9 @@ Este trabajo ha sido desarrollado como parte del Servicio Social.
 ##Guía de edición:
 A continuación se indica cómo editar el contenido:
 ![image](https://github.com/RoxetHonguito/LabFluidosServicio.github.io/assets/33643863/43488ac8-ba2e-407e-b7f8-84b3f2d1403b)
+Se puede acceder al menú principal:
+■ Artículos Publicados
+■ Proyectos en curso $\left{ \begin{array}{c} 
+                             Docencia
+                             Investigación
+                       \end{array}$
