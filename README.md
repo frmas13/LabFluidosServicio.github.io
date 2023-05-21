@@ -15,5 +15,4 @@ A continuación se indica cómo editar el contenido:
 Se puede acceder al menú principal:
 ■ Artículos Publicados
 ■ Proyectos en curso
-$math
-begin{bmatrix}X\\Y\end{bmatrix}$
+$\begin{bmatrix}a & b\\c & d\end{bmatrix}$
