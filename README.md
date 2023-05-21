@@ -18,3 +18,12 @@ Se puede acceder al menú principal:
                              Docencia\\
                              Investigación
                        \end{array}\right .$
+$\[
+\left \{
+\begin{array}{r}
+x+y-2z  = 5 \\
+-3x+5y-4z  = 0 \\
+3x+y+z = 8
+\end{array}
+\right .
+\]$
