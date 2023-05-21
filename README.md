@@ -16,4 +16,17 @@ Se puede acceder al menú principal:
 
 ■ Artículos Publicados
 
-■ Proyectos en curso $\rightarrow$
+■ Proyectos en curso $\rightarrow$ Docencia 
+                     $\rightarrow$ Investigación
+                    
+Identificar el renglón $53$ la siguiente sintáxis dentro de la sección $<main>$
+''
+$#0969DA$<div class = "caja">
+				<div class = "card">
+					<img src = "IMG/Galeria/Gal01.jpg">
+					<h4>Aleta Oscilando</h4>
+					<p>Para el estudio de los peces se parte de entender el sistema de propulsión y de empuje. El estudio vía un entorno simulado generaliza las contracciones musculares de un pez
+			con un movimiento ondulatorio que se propagan de la cabeza a la cola del sujeto de estudio.</p>
+					<a href= "Docencia1.html">On the forced flow around a rigid flapping foil</a>
+				</div>
+''
