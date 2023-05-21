@@ -16,13 +16,4 @@ Se puede acceder al menú principal:
 
 ■ Artículos Publicados
 
-■ Proyectos en curso
-$\begin{equation}
-\left(
-\begin{matrix}
-8 & 0 & 2\\
-2 & 7 & 1\\
-4 & 3 & 9
-\end{matrix}
-\right)
-\end{equation}$
+■ Proyectos en curso $\rightarrow$
