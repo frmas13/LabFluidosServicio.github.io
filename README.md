@@ -15,11 +15,11 @@ A continuación se indica cómo editar el contenido:
 Se puede acceder al menú principal:
 ■ Artículos Publicados
 ■ Proyectos en curso
-$$\[
-\left[
-   \begin{matrix} % or pmatrix or bmatrix or Bmatrix or ...
-      a & b \\
-      c & d \\
-   \end{matrix}
-\right]
-\]$$
+$\begin{Bmatrix}
+1&2&3\\
+4 & 6 & 8
+\end{Bmatrix} \times \begin{Bmatrix}
+8 & 5 \\
+7 & 3 \\
+1 & 8 
+\end{Bmatrix}$
