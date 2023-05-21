@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset = "UTF-8">
+	<meta name ="viewport" content = "width = device-width, initial-scale=1.0">
+	<link rel ="stylesheet" href = "CSS/PPrincipal.css">
+	<meta name = "autor" content = "Roxette Ramirez"/> 
+	<meta name = "Descripción" content = "Difundir el trabajo realizado en el Laboratorio de Fluidos
+		de la Facultad de Ciencias de la UNAM." />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title> Laboratorio de Fluidos</title>
+	<link rel = "shortcut icon" href = "Icono.ico" type = "image/x-icon" />
+	<link href = "https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet"> 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header class ="header" id ="inicio"> 
+		<nav class = "menu_desplegable" id = "menu"> 
+			<section class= "menu_contenido">
+			<h1 class = "titulo">Laboratorio de Fluidos, Facultad de Ciencias, UNAM</h1>
+				<ul class = "menu_links">
+					<li class = "menu_item"> 
+						<a href = "PagPrincipal.html" class = "menu_link">Principal</a>
+					</li>
+					<li class = "menu_item  menu_item--show"> 
+						<a href = "#" class = "menu_link">Proyectos en curso<img src="Imagenes/arrow.svg" alt = "" class="menu_arrow"></a>
+						<ul class="menu_nesting">
+							<li class ="menu_inside">
+								<a href = "Docencia.html" class = "menu_link menu_link--inside">Docencia</a>
+							</li>
+							<li class ="menu_inside">
+								<a href = "Investigación.html" class = "menu_link menu_link--inside">Investigación</a>
+							</li>
+						</ul>
+					</li> 
+				
+					<li class ="menu_item">
+						<a href="Galeria.html" class="menu_link">Galeria</a>
+					</li>
+					<li class ="menu_item">
+						<a href="ArtPublicados.html" class="menu_link">Artículos Publicados</a>
+					</li>
+					<li class ="menu_item"><a href="Contacto.html" class="menu_link ">Contacto</a>
+					</li>
+				</ul>
+			
+			</section>
+		</nav>
+
+	</header>
+	<main id = "Contenido">
+		<section class="Presentacion" id = "Col1">
+			
+			<div class = "caja">
+				<div class = "card">
+					<img src = "IMG/Galeria/Gal01.jpg">
+					<h4>Proyecto 1</h4>
+					<p>Para el estudio de los peces se parte de entender el sistema de propulsión y de empuje. El estudio vía un entorno simulado generaliza las contracciones musculares de un pez
+			con un movimiento ondulatorio que se propagan de la cabeza a la cola del sujeto de estudio.</p>
+					<a href= "ProbUno.html">On the forced flow around a rigid flapping foil</a>
+				</div>
+	
+			<div class = "card">
+				<img src = "IMG/Galeria/Gal02.jpg">
+				<h4>Islas Canarias</h4>
+				<p>En la imagen se puede apreciar</p>
+				<a href "#">Referencia</a>
+			</div>
+			
+			<div class = "card">
+				<img src = "IMG/Galeria/Gal02.jpg">
+				<h4>Islas Canarias</h4>
+				<p>En la imagen se puede apreciar</p>
+				<a href "#">Referencia</a>
+			</div>
+			
+			<div class = "card">
+				<img src = "IMG/Galeria/Gal02.jpg">
+				<h4>Islas Canarias</h4>
+				<p>En la imagen se puede apreciar</p>
+				<a href "#">Referencia</a>
+			</div>
+		
+		</div>
+			
+		</section>
+		
+		<aside  id = "Col2">
+			<h3>Propuestas de Proyectos</h3>
+			<hr class="DatosBarra">
+			<ul class ="Anuncios"  >
+				<li><a href="ProbUno.html" class="Opc">Aleta oscilando contra corriente.</a>
+				</li>
+				<li><a href="#" class="Opc">Ejemplo 2</a></li>
+				<li><a href="#" class="Opc">Ejemplo 3</a></li>
+			</ul>
+			
+			<h3>Problemas Resueltos</h3>
+			<hr class="DatosBarra">
+			<ul class ="Anuncios"  >
+				<li><a href="ProbUno.html">Aleta oscilando contra corriente </a>
+					<ul class = "subtema">
+						<li>
+						<a href = "PUnoTeoria.html">Teoría</a>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#" class="Opc">Ejemplo 2</a></li>
+				<ul class = "subtema">
+						<li>
+						<a href = "PUnoTeoria.html">Teoría</a>
+						</li>
+					</ul>
+				<li><a href="#" class="Opc">Ejemplo 3</a></li>
+				<ul class = "subtema">
+						<li>
+						<a href = "PUnoTeoria.html">Teoría</a>
+						</li>
+					</ul>
+			</ul>
+			
+		</aside>
+	</main>
+	<footer id = "contacto">
+		<div class ="footer-content">
+			<div class ="Informacion">
+				<h2 class="Datos">Laboratorio de Fluidos</h2>
+				<p>Facultad de Ciencias, UNAM </p>
+				<p>Dirección </p>
+				<p>Número</p>
+			</div>
+			<div class = "Redes">
+				<a href ="./" class = "Redes-icon"><i class='bx bxl-facebook'></i></a>
+				<a href ="./" class = "Redes-icon"><i class='bx bxl-twitter' ></i></a>
+				<a href ="./" class = "Redes-icon"><i class='bx bxl-instagram' ></i></a>
+			</div>
+		</div>
+		<div class = "line"></div>
+	</footer>
+</html>
