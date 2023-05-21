@@ -14,16 +14,8 @@ A continuación se indica cómo editar el contenido:
 ![image](https://github.com/RoxetHonguito/LabFluidosServicio.github.io/assets/33643863/43488ac8-ba2e-407e-b7f8-84b3f2d1403b)
 Se puede acceder al menú principal:
 ■ Artículos Publicados
-■ Proyectos en curso $\left {\begin{array}{r} 
+■ Proyectos en curso $$\left {\begin{array}{r} 
                              Docencia\\
                              Investigación
-                       \end{array}\right .$
-$\[
-\left \{
-\begin{array}{r}
-x+y-2z  = 5 \\
--3x+5y-4z  = 0 \\
-3x+y+z = 8
-\end{array}
-\right .
-\]$
+                       \end{array}\right .$$
+$\sqrt{3x-1}+(1+x)^2$
