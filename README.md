@@ -13,6 +13,16 @@ Este trabajo ha sido desarrollado como parte del Servicio Social.
 A continuación se indica cómo editar el contenido:
 ![image](https://github.com/RoxetHonguito/LabFluidosServicio.github.io/assets/33643863/43488ac8-ba2e-407e-b7f8-84b3f2d1403b)
 Se puede acceder al menú principal:
+
 ■ Artículos Publicados
+
 ■ Proyectos en curso
-$\begin{bmatrix}a & b\\c & d\end{bmatrix}$
+$\begin{equation}
+\left(
+\begin{matrix}
+8 & 0 & 2\\
+2 & 7 & 1\\
+4 & 3 & 9
+\end{matrix}
+\right)
+\end{equation}$
