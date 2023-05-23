@@ -67,7 +67,7 @@
 	
 	<section class="Presentacion" id = "Col1">
 	<section class="Aletas" id="Aleta">
-		<p class ="P1Sub">Pyoyecto de investigación: "Flujo alrededor de un ala flexible".</p>
+		<p class ="P1Sub">Proyecto de investigación: "Flujo alrededor de un ala flexible".</p>
 		<p class ="P1sub">Autor: Juan Manuel González Lóez </p>
 		<a href = "VonKarman.pdf"><p class ="P1sub">Acceder al artículo <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAXBJREFUSEvtl4ExRDEQhr+rgA7oAB1QAR2gAyqgA6MCSqADKqADpwMqYD6TnQmXd5c8uTlmLjNv5l6yybf/Jm83N2FFbbIiLvPAR8BOpWNvwHWl7ZfZEPgWOG5ZCHDOae2cIbAKNmoXyeyq4UPgjwboOXCZOVoF7wE+AIzQQwu8F1jobgu8J9jdqYb3BlfDlwEuwWc4PcDP6XD9/BC2AZ9ivugBrvnylqJ4DS5F4P+E+hU4SxJMDifAFvCe8vM09R0mm/tUpXw1Z0ehaVb8COynVHgH+LwAeylLCbQU2m++1smr5IT1PNpocFQrF1CJyqN0Wp38rXqdvChs8q/AhncTMGEY9gCr2EQRhSIU5/zRYOut4RR4A1gKdUKgEXhKDumE0XAsV94MNnwu7EKGUXA0+1XtXkZq1F4HbXEo1ymzXDVSmFruXItydRzKb3Y9r7dDDnjfzvd7rmIHPTT5YVqkrDQeh3Nm7E/+hRmjsHrOJ69uXB92fFbfAAAAAElFTkSuQmCC"/></p></a>
 
@@ -76,10 +76,9 @@
 	</figure>
 	
 	<div>
-			<p class ="Planteamiento" >
-			Resumen:
-			
-			Planteamiento del problema:
+			<p class ="Planteamiento" >			
+			<p class ="P1Sub"> Planteamiento del problema:</p>
+		
 El problema a resolver en este trabajo es estudiar el flujo libre bidimensional e incompresible de
 un fluido Newtoniano alrededor de un perfil flexible, el cual está basado en los perfiles simétrico y
 asimétrico de Joukowsky. El fluido tiene una velocidad inicial constante lejos del ala, paralela al eje de
@@ -88,13 +87,12 @@ infinito bidimensional. Para encontrar la solución se resuelven las ecuaciones 
 un fluido incompresible, </p>
      <p class="ecuaciones">$\frac{\partial \vec{u}}{\partial t}+\vec{u}\cdot\nabla u=-\frac{1}{\rho_f}\nabla P + \nu \nabla^2\vec{u}$</p>
 	 <p class="ecuaciones">$\nabla \cdot u = 0$</p>
-	 <p class ="Planteamiento">Densidad de masa $\rho_f$, viscosidad cinemática  $\nu$ , $u(r)$ y $P(r)$ son los campos de velocidad y presión.
-	 Las condiciones en la superficie del pez son de no deslizamiento:</p>
-	 <p class="ecuaciones">$v_s (r_s,t) = V(t)+\dot{\theta}(t)(r_s-R)$</p>
-	 <p class ="Planteamiento">Lejos del pez existe un campo de velocidades, U, horizontal uniforme y a presión constante. </p>
-	 <p class ="Planteamiento">El estudio mediante la simulación aprovecha entender el movimiento del pez como una estructura que ondula de su cabeza a la aleta, se hace la construcción a través de un semicírculo de diámetro D pegado 
-	 a un triángulo isósceles de altura h. La distribución de densidad de masa de la lámina, $\rho_s$, se halla en el centro del semicírculo. Se estudian dos casos: con la lámina con su punto central en el 
-	 círculo fijado, y otro en el que se deja libre el mismo círculo, brindandole en este último un movimiento traslacional.</p>
+	 <p class ="Planteamiento"> donde $\rho_f$ es la densidad de masa,  $\nu$ la viscosidad cinemática, $u(r)$ y $P(r)$ son los campos de velocidad y presión.
+	 Las condiciones en la superficie del perfil son de no deslizamiento:</p>
+	 <p class="ecuaciones"> $u(r,t) = v_s (r_s,t) $</p>
+	 <p class ="Planteamiento">en donde $v_s(r_s,t)$ es la velocidad de la supeficie del perfil y  de éste la vlocidad es uniforme. </p>
+	 <p class ="Planteamiento">El problema se estidia numéricamente usando el Método de Boltzmann en redes implementado para este caso en Unidades de Pocesamiento Gráfico
+		GPU's por sus sigles en inglés.</p>
 
     <p class ="Planteamiento">La lámina aleteante rota respecto a su centro de masa.
 	El flujo es bidimensional, uniforme, incompresible y viscoso. Las fronteras son infinitas y la ala nada siempre contra corriente. 
