@@ -5,27 +5,10 @@ Versión beta para la página de difusión del Laboratorio de Fluidos de la Facu
 A través de este medio se pretenden difundir las actividades que se realizan en el laboratorio en el área de hidrodinámica. 
 De esta forma se incentiva a los alumnos a colaborar en futuros proyectos de investigación y aprender de proyectos anteriores.
 Los recursos que se comparten en la página son simulaciones, vídeos experimentales y artículos publicados. Todo el material se ha desarrollado por estudiantes y profesores adjuntos al laboratorio.
-Además, compartir recursos útiles den el área para los cursos que se imparten semestralmente.
+Además, compartir recursos útiles en el área para los cursos que se imparten semestralmente.
 
 Este trabajo ha sido desarrollado como parte del Servicio Social.
 
-##Guía de edición:
-A continuación se indica cómo editar el contenido:
-![image](https://github.com/RoxetHonguito/LabFluidosServicio.github.io/assets/33643863/43488ac8-ba2e-407e-b7f8-84b3f2d1403b)
-Se puede acceder al menú principal:
-
-■ Artículos Publicados
-
-■ Proyectos en curso $\rightarrow$ Docencia 
-                     $\rightarrow$ Investigación
-                    
-Identificar el renglón $53$ la siguiente sintáxis dentro de la sección $<main>$
-```<div class = "caja">
-				<div class = "card">
-					<img src = "IMG/Galeria/Gal01.jpg">
-					<h4>Aleta Oscilando</h4>
-					<p>Para el estudio de los peces se parte de entender el sistema de propulsión y de empuje. El estudio vía un entorno simulado generaliza las contracciones musculares de un pez
-			con un movimiento ondulatorio que se propagan de la cabeza a la cola del sujeto de estudio.</p>
-					<a href= "Docencia1.html">On the forced flow around a rigid flapping foil</a>
-				</div>
-```
+## Guía de edición:
+El siguiente link es un manual para editar el contenido de la página
+https://es.overleaf.com/read/ckdsdkwcqbqw
