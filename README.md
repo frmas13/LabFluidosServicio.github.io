@@ -12,3 +12,4 @@ Este trabajo ha sido desarrollado como parte del Servicio Social.
 ## Guía de edición:
 El siguiente link es un manual para editar el contenido de la página
 https://es.overleaf.com/read/ckdsdkwcqbqw
+El mismo se encuentra en formato PDF en el repositorio con el nombre MANUALEDICION.pdf
