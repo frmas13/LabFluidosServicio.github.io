@@ -539,6 +539,7 @@ a{
     display: flex;
     justify-content: center;
     transition: .5s ease-in-out;
+    align-items: center;
 }
 .slick{
     position: relative;
@@ -563,7 +564,7 @@ a{
 }
 .slick a img{
     object-fit: cover;
-    height: 300px;
+    height: 100%;
     width: 100%;
     border-radius: 4px;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
