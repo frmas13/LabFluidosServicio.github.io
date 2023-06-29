@@ -6,7 +6,7 @@
 		<meta name = "autor" content = "Roxette Ramirez"/> 
 		<meta name = "Descripción" content = "Difundir el trabajo realizado en el Laboratorio de Fluidos
 		de la Facultad de Ciencias de la UNAM." />
-		<title> Ala oscilando</title>
+		<title> Dispersión de ondas </title>
 		<link rel = "shortcut icon" href = "Icono.ico" type = "image/x-icon" />
 		<link href = "https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet"> 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -74,36 +74,23 @@
 				  TlmLjNv5l6yybf/Jm83N2FFbbIiLvPAR8BOpWNvwHWl7ZfZEPgWOG5ZCHDOae2cIbAKNmoXyeyq4UPgjwboOXCZOVoF7wE+AIzQQwu8F1jobgu8J9jdqYb3BlfDlwEuwWc4PcDP6XD9/BC2AZ9ivugB
 				  rvnylqJ4DS5F4P+E+hU4SxJMDifAFvCe8vM09R0mm/tUpXw1Z0ehaVb8COynVHgH+LwAeylLCbQU2m++1smr5IT1PNpocFQrF1CJyqN0Wp38rXqdvChs8q/AhncTMGEY9gCr2EQRhSIU5/zRYOut4R
 				  R4A1gKdUKgEXhKDumE0XAsV94MNnwu7EKGUXA0+1XtXkZq1F4HbXEo1ymzXDVSmFruXItydRzKb3Y9r7dDDnjfzvd7rmIHPTT5YVqkrDQeh3Nm7E/+hRmjsHrOJ69uXB92fFbfAAAAAElFTkSuQmCC"/></p></a>
-		<a href = "https://www.youtube.com/watch?v=lgyx4Q2JW08"><p class ="P1sub"> Platica en el seminario de Fluidos, FC-UNAM "Diseño de Implementación de un Ala flexible en el nado"  J. M. González <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAQVJREFUSEvtltENwjAMRK+bwCawCUwCTAKbwCYwCroKS0Y4TWInLRLkr1LiF9vXiwcstIaFuCgBrwDsghd8ALjoGCXgOwDCo4vwtQTJgZnpOUpU508AjvzOgbnp8AcDYL+4ansfLvUNwP6l9ppWNAFvVdYUYckFTLAWkoguJS5mLGDRHsvOP2AzIcYuYOFJ9lb/u4JFdFdDfF3BU6bTBTx7j+URmVXVtZYaLjWdq9a1KLow2Ptu/B6Y/j5OIvo9tiyTfbSMwFPq5ARigcWF6L8eMekLjpOHNfqkwJ7ssmdypc4G8G5Igb3xSua4MbYGtxJSboD8ALcS0puIUqUrul2k7l8HfgJIZ08fGCKNDAAAAABJRU5ErkJggg=="/></p></a>
-	<div class = "video" style="text-align: center;">
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/lgyx4Q2JW08" title="YouTube video player" frameborder="0" 
-		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-	</div>
-	<figure class = "PezEsq" style="text-align: center;">
-		<img src="IMG/EsquemaProblema.jpg">
+		
+	<figure class = "ola" style="text-align: center;">
+		<img src="IMG/Galeria/ola.jpg">
 	</figure>
 	
 	<div>
 			<p class ="Planteamiento" >			
 			<p class ="P1Sub"> Planteamiento del problema:</p>
 		
-<p class ="Planteamiento">El problema a resolver en este trabajo es estudiar el flujo libre bidimensional e incompresible de
-un fluido Newtoniano alrededor de un perfil flexible, el cual está basado en los perfiles simétrico y
-asimétrico de Joukowsky. El fluido tiene una velocidad inicial constante lejos del ala, paralela al eje de
-esta. Del mismo modo la presión lejos del ala es constante. El ala se encuentra inmersa en un espacio
-infinito bidimensional. Para encontrar la solución se resuelven las ecuaciones de Navier-Stokes para
-un fluido incompresible, </p>
-     <p class="ecuaciones">$\frac{\partial \vec{u}}{\partial t}+\vec{u}\cdot\nabla u=-\frac{1}{\rho_f}\nabla P + \nu \nabla^2\vec{u}$,</p>
-	 <p class="ecuaciones">$\nabla \cdot u = 0$,</p>
-	 <p class ="Planteamiento"> donde $\rho_f$ es la densidad de masa,  $\nu$ la viscosidad cinemática, $u(r)$ y $P(r)$ son los campos de velocidad y presión.
-	 Las condiciones en la superficie del perfil son de no deslizamiento:</p>
-	 <p class="ecuaciones"> $u(r,t) = v_s (r_s,t) $</p>
-	 <p class ="Planteamiento">en donde $v_s(r_s,t)$ es la velocidad de la supeficie del perfil y  de éste la vlocidad es uniforme. </p>
-	 <p class ="Planteamiento">El problema se estidia numéricamente usando el Método de Boltzmann en redes implementado para este caso en Unidades de Pocesamiento Gráfico
-		GPU's por sus siglas en inglés.</p>
+<p class ="Planteamiento"> Este proyecto de investigación perteneciente al Laboratorio de Fluidos del Departamento de Física, UNAM consta de un tanque de 
+	acrílico con un mecanismo electromecánico acoplado a una pala para generar olas de carácter no lineal, así como de un mecanismo para capturar 
+	en fotografías el perfil y el frente de la ola.  </p>
+     
 
-    <p class ="Planteamiento"> El perfil está basado en los perfiles de Joukowski en donde se incluyó en la parte asimtétrica una fución que oscila en el tiempo,
-	    de tal manera que se simula el movimiento del perfil al pasar de un perfil asimétrico a uno simétrico como se muestra en las figuras.</p>
+<p class ="Planteamiento"> Se han podido observar diferentes características de las olas respecto a los parámetros que controlan la generación de éstas 
+	como lo es el nivel del agua, podemos observar en las imágenes que cuando tenemos un nivel mayor de agua el perfil de la ola es mucho menos suave, 
+	debido a que se aleja de la suposición de olas en aguas someras, lo cual nos permite hacer un análisis de la forma del perfil de la ola y del frente de onda. </p>
 
 		</div>		
 	
