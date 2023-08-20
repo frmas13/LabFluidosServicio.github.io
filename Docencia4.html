@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+		<meta charset = "utf-8" />
+		<link rel ="stylesheet" href = "CSS/PPrincipal.css"> <!--href es el archivo css se allá en la misma carpeta-->
+		<meta name = "autor" content = "Roxette Ramirez"/> 
+		<meta name = "Descripción" content = "Difundir el trabajo realizado en el Laboratorio de Fluidos
+		de la Facultad de Ciencias de la UNAM." />
+		<title> Dispersión de ondas </title>
+		<link rel = "shortcut icon" href = "Icono.ico" type = "image/x-icon" />
+		<link href = "https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet"> 
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+		<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      extensions: ["tex2jax.js"],
+      "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
+      tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+      TeX: { noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+      messageStyle: "none"
+    });
+    </script>    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+</head>
+	
+	<body>
+		<header class ="header" id ="inicio"> 
+		
+		<nav class = "menu_desplegable">  <!--Igual q en la principal-->
+			<section class= "menu_contenido">
+			<h1 class = "P1titulo">Proyectos de Docencia</h1>
+				<ul class = "menu_links">
+					<li class = "menu_item"> 
+						<a href = "PagPrincipal.html" class = "menu_link">Principal</a>
+					</li>
+					<li class = "menu_item  menu_item--show"> 
+						<a href = "#" class = "menu_link">Proyectos en curso<img src="Imagenes/arrow.svg" alt = "" class="menu_arrow"></a>
+						<ul class="menu_nesting">
+							<li class ="menu_inside">
+								<a href = "Docencia.html" class = "menu_link menu_link--inside">Docencia</a>
+							</li>
+							<li class ="menu_inside">
+								<a href = "Investigación.html" class = "menu_link menu_link--inside">Investigación</a>
+							</li>
+						</ul>
+					</li> 
+					<li class ="menu_item">
+						<a href="Galeria.html" class="menu_link">Galeria</a>
+					</li>
+					<li class ="menu_item">
+						<a href="ArtPublicados.html" class="menu_link">Artículos Publicados</a>
+					</li>
+					<li class ="menu_item"><a href="Contacto.html" class="menu_link ">Contacto</a>
+					</li>
+				</ul>
+			
+			<div class="menu_icono"> 
+				<img src="IMG/menu.svg" class="menu_img">
+			</div>
+			</section>
+		</nav>
+	</header>
+	
+	<main id = "Contenido"> 
+	
+	<section class="Presentacion" id = "Col1">
+	<section class="Aletas" id="Aleta">
+		<p class ="P1Sub">Proyecto de Clase: "Caída de cuerpos con fricición variable".</p>
+		<p class ="P1sub">Autor: F. Mandujano </p>
+		<p class ="P1sub"> Este proyecto surge como parte de la discusión de la ley de caída libre y su contraparte en el 
+    laborartorio y en general la vida cotidiana. Al hacer observaciones preliminares es fácil notar que en la mayoría de
+    los casos los cuerpos que caen en línea recta lo hacen siguiendo la ley de caída libre, es decir, la fuerza de fricción que 
+    hace el aire sobre el proyectil es muy pequeña. Además, el tiempo de caída de uno de estos cuerpos después 
+    haber recorrido una distancia $h$ es $\sqrt{2h/g}$, que para una distancia del orden de un metro es menos de medio segundo. Esto
+    hace muy difícil de onservar la dferencia entre la caída de dos cuerpos que bajen en línea recta.</p>
+		
+	<figure class = "PezEsq" style="text-align: center;">
+		<img src="IMG/Galeria/fer_fluid1.png">
+	</figure>
+	
+	<div>
+			<p class ="Planteamiento" >			
+			<p class ="P1Sub"> Planteamiento del problema: </p>
+        <p class ="Planteamiento"> El experimento consiste de una cámara en donde se puede variar la presión interna.   </p>
+
+		</div>		
+	
+
+	</section>
+	</section>
+		<section id = "Col2">
+			<h3>Propuestas de Proyectos</h3>
+			<hr class="DatosBarra">
+			<ul class ="Anuncios"  >
+				<li><a href="ProbUno.html" class="Opc">Aleta oscilando contra corriente.</a>
+				</li>
+				<li><a href="#" class="Opc">Ejemplo 2</a></li>
+				<li><a href="#" class="Opc">Ejemplo 3</a></li>
+			</ul>
+			
+			<h3>Problemas Resueltos</h3>
+			<hr class="DatosBarra">
+			<ul class ="Anuncios"  >
+				<li><a href="ProbUno.html">Ala oscilando contra corriente </a>
+					<ul class = "subtema">
+						<li>
+						<a href = "PUnoTeoria.html">Teoría</a>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#" class="Opc">Ejemplo 2</a></li>
+				<ul class = "subtema">
+						<li>
+						<a href = "PUnoTeoria.html">Teoría</a>
+						</li>
+					</ul>
+				<li><a href="#" class="Opc">Ejemplo 3</a></li>
+				<ul class = "subtema">
+						<li>
+						<a href = "PUnoTeoria.html">Teoría</a>
+						</li>
+					</ul>
+			</ul>
+		</section>		
+	</main>
+	<footer id = "contacto">
+			<div class ="footer-content">
+				<div class ="Informacion">
+					<h2 class="Datos">Laboratorio de Fluidos</h2>
+					<p>Facultad de Ciencias, UNAM </p>
+					<p>Dirección </p>
+					<p>Número</p>
+				</div>
+				<div class = "Redes"> <!--Revisar esta parte-->
+				<a href ="./" class = "Redes-icon">
+					<i class='bx bxl-facebook'></i>
+				</a>
+				<a href ="./" class = "Redes-icon">
+					<i class='bx bxl-twitter' ></i>
+				</a>
+				<a href ="./" class = "Redes-icon">
+					<i class='bx bxl-instagram' ></i>
+				</a>
+				</div>
+			</div>
+			<div class = "line"></div>
+		</footer>
+	<!--enlazo los archivos ja y css-->
+	<script src="js/Java.js"> </script>
+	</body>
+</html>
