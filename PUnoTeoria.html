@@ -86,21 +86,21 @@
 	
 	<div>
 			<p class ="Planteamiento" >
-        Para estudiar alrededor de un solido bi-dimensional cuya superficie es de la forma <p class="ecuaciones">$ f(x,y,t) = C $ </p> se resuelven las 
+        Para estudiar alrededor de un solido bi-dimensional cuya superficie es de la forma $ f(x,y,t) = C $  se resuelven las 
 	ecuaciones de Navier-Stokes con condiciones a la frontera, es decir, </p>     
-	<p class="ecuaciones">$\frac{\partial \vec{u}}{\partial t}+\vec{u}\cdot\nabla u=-\frac{1}{\rho_f}\nabla P + \nu \nabla^2\vec{u}$</p>
-	 <p class="ecuaciones">$\nabla \cdot u = 0$</p>
-	 <p class ="Planteamiento">Donde $\rho_f$ es la deensidad de masa , $\nu$ la viscosidad cinemática del fluido y $u(\vec{r},t)$ y $P(\vec{r},t)$ 
-	son los campos de velocidad y presión. Las condiciones de forntera sobre el sólido deformable son de no deslizamiento:</p>
-	 <p class="ecuaciones">$ u(,tr) = V(\vec{r},t) + v_s (r_s,t) </p>
-	 <p class ="Planteamiento">en donde $V(\vec{r},t)$ es la velocidad del centro de masa del sólido y $v_s (r_s,t)$ es la velocidad de la 
-		 superficie relativa al centro de masa, como se muestra en la figura. Como condiciones externas las condiiones de frontera consideradas son de dos tipos.
-		 Condiciones de fluido infinito, por lo que lejos del sólido el flujo se supone uniforme de velocidad constante $U$ a presión constante. La segunda corresponde 
-	 a flujos entre placa paralelas, en donde se usan condiciones de no deslizamiento y flujo de Poiseuille a la entrada y a la salida lejos del sólido.</p>
-	 <p class ="Planteamiento"> Una vez especificada la función <p class="ecuaciones">$ f(x,y,t) = C $ </p>, las ecuaciones de movimiento de resuelven
+	<p class="ecuaciones">$\frac{\partial {\bf u}}{\partial t}+{\bf u}\cdot\nabla {\bf u}=-\frac{1}{\rho_f}\nabla P + \nu \nabla^2{\bf u}$</p>
+	 <p class="ecuaciones">$\nabla \cdot {\bf u} = 0$</p>
+	 <p class ="Planteamiento">Donde $\rho_f$ es la densidad de masa , $\nu$ la viscosidad cinemática del fluido y ${\bf u}({\bf r},t)$ y $P({\bf r},t)$ 
+	son los campos de velocidad y presión. Las condiciones de frontera sobre el sólido deformable son de no deslizamiento:</p>
+	 <p class="ecuaciones">$ {\bf u}({\bf r},t) = {\bf V}({\bf r},t) + {\bf v}_s ({\bf r}_s,t) </p>
+	 <p class ="Planteamiento">en donde ${\bf V}({\bf r},t)$ es la velocidad del centro de masa del sólido y ${\bf v}_s ({\bf r}_s,t)$ es la velocidad de la 
+		 superficie relativa al centro de masa, como se muestra en la figura. Como condiciones externas las condiciones de frontera consideradas son de dos tipos.
+		 Condiciones de fluido infinito, lejos del sólido el flujo se supone uniforme de velocidad constante $U$ a presión constante. La segunda corresponde 
+	 a flujos entre placa paralelas, en donde se usan condiciones de no deslizamiento y flujo de Poiseuille a la entrada y a la salida.</p>
+	 <p class ="Planteamiento"> Una vez especificada la función $f(x,y,t) = C $, las ecuaciones de movimiento de resuelven
 	numéricamente usando el Método de Boltzmann en Redes. Se tiene un programa prototipo al que se le puede modificar la geometría inmersa, actualmente se han 
 	implementado clilíndros elípticos, Alas rígidas y Alas deformables basadas en perfiles de la familia de Alas de Joukowsky. Las diferentes versiones del programa
-	están implementadas para GPU's (Graphics Processing Unit). </p>
+	trabajan en paralelo y están implementadas en GPU's (Graphics Processing Unit). </p>
 	</div>		
 	
 
