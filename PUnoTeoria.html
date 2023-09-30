@@ -6,7 +6,7 @@
 		<meta name = "autor" content = "Roxette Ramirez"/> 
 		<meta name = "Descripción" content = "Difundir el trabajo realizado en el Laboratorio de Fluidos
 		de la Facultad de Ciencias de la UNAM." />
-		<title> Ala oscilando</title>
+		<title> Teoría: Flujo Viscoso </title>
 		<link rel = "shortcut icon" href = "Icono.ico" type = "image/x-icon" />
 		<link href = "https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet"> 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -84,7 +84,7 @@
 		<img src="IMG/Galeria/ala_rig.png">
 	</figure>
 	
-	<div>
+
 			<p class ="Planteamiento" >
         Para estudiar alrededor de un solido bi-dimensional cuya superficie es de la forma $ f(x,y,t) = C $  se resuelven las 
 	ecuaciones de Navier-Stokes con condiciones a la frontera, es decir, </p>     
@@ -92,17 +92,15 @@
 	 <p class="ecuaciones">$\nabla \cdot {\bf u} = 0$</p>
 	 <p class ="Planteamiento">Donde $\rho_f$ es la densidad de masa , $\nu$ la viscosidad cinemática del fluido y ${\bf u}({\bf r},t)$ y $P({\bf r},t)$ 
 	son los campos de velocidad y presión. Las condiciones de frontera sobre el sólido deformable son de no deslizamiento:</p>
-	 <p class="ecuaciones">$ {\bf u}({\bf r},t) = {\bf V}({\bf r},t) + {\bf v}_s ({\bf r}_s,t) </p>
+	 <p class="ecuaciones">$ {\bf u}({\bf r},t) = {\bf V}({\bf r},t) + {\bf v}_s ({\bf r}_s,t) $</p>
 	 <p class ="Planteamiento">en donde ${\bf V}({\bf r},t)$ es la velocidad del centro de masa del sólido y ${\bf v}_s ({\bf r}_s,t)$ es la velocidad de la 
 		 superficie relativa al centro de masa, como se muestra en la figura. Como condiciones externas las condiciones de frontera consideradas son de dos tipos.
-		 Condiciones de fluido infinito, lejos del sólido el flujo se supone uniforme de velocidad constante $U$ a presión constante. La segunda corresponde 
-	 a flujos entre placa paralelas, en donde se usan condiciones de no deslizamiento y flujo de Poiseuille a la entrada y a la salida.</p>
-	 <p class ="Planteamiento"> Una vez especificada la función $f(x,y,t) = C $, las ecuaciones de movimiento de resuelven
+		 Condiciones de fluido infinito, lejos del sólido el flujo se supone uniforme de velocidad constante ${\bf U}$ a presión constante. La segunda corresponde 
+	 a flujos entre placas paralelas, en donde se usan condiciones de no deslizamiento y flujo de Poiseuille a la entrada y a la salida.</p>
+	 <p class ="Planteamiento"> Una vez especificada la función $f(x,y,t) = C $, las ecuaciones de movimiento se resuelven
 	numéricamente usando el Método de Boltzmann en Redes. Se tiene un programa prototipo al que se le puede modificar la geometría inmersa, actualmente se han 
 	implementado clilíndros elípticos, Alas rígidas y Alas deformables basadas en perfiles de la familia de Alas de Joukowsky. Las diferentes versiones del programa
 	trabajan en paralelo y están implementadas en GPU's (Graphics Processing Unit). </p>
-	</div>		
-	
 
 	</section>
 	</section>
@@ -144,11 +142,11 @@
 	<footer id = "contacto">
 			<div class ="footer-content">
 				<div class ="Informacion">
-					<h2 class="Datos">Laboratorio de Fluidos</h2>
-					<p>Facultad de Ciencias, UNAM </p>
-					<p>Dirección </p>
-					<p>Número</p>
-				</div>
+				<h2 class="Datos">Laboratorio de Fluidos</h2>
+				<p>4° piso, Dpto. de Física, </p>
+				<p>Facultad de Ciencias, UNAM </p>
+				<p>Télefono: 5556224934 </p>
+			</div>
 				<div class = "Redes"> <!--Revisar esta parte-->
 				<a href ="./" class = "Redes-icon">
 					<i class='bx bxl-facebook'></i>
