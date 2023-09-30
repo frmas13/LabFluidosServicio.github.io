@@ -429,8 +429,7 @@ footer{ /*le damos color al pie de página*/
 }
 
 .galeria{
-	justify-content: center;
-	margin-left: 25%;
+	text-align: center;
 }
 
 .galeria img{
