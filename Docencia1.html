@@ -69,13 +69,11 @@
 		<p class ="P1Sub">Proyecto de investigación: "Flujo alrededor de un ala flexible".</p>
 		<p class ="P1sub">Autor: Juan Manuel González López </p>
 		
-		<p class ="Motivacion">Este proyecto de investigación nace como parte del servicio social del
-		Fis. J. M. González en el que modificó un programa que simula el flujo alrededor de un ala 
-		rígida oscilante. El proyecto continuó como parte de su Tesis de Liceciatura en Física en donde implementó un ala 
-		flexible y caracterizó el flujo en función del cosciente entre dos longitudes asociadas a la geometría móvil. Actualmente se
-		elijieron tres perfiles (tres conjuntos de valores para los parámetros geométricos) y se estudia el flujo 
-		al cambiar las frecuencias de oscilación del perfil. </p>
-	
+		<p class ="Motivacion">Este proyecto de investigación nace como parte del servicio social del Fis. J. M. González en el que en donde implementó una 
+		ala flexible modificando un programa que simulaba el flujo alrededor de un ala rígida oscilante. El proyecto continuó como parte de su Tesis de 
+		Liceciatura en Física en donde validó sus modificaciones y caracterizó el flujo en función del cosciente entre dos longitudes asociadas a la geometría 
+		móvil. Actualmente se elijieron tres perfiles (tres conjuntos de valores para los parámetros geométricos) y se estudia el flujo al cambiar las 
+		frecuencias de oscilación de los perfiles. </p>
 	
 	<figure class = "PezEsq" style="text-align: center;">
 		<img src="IMG/ala_flex.png">
@@ -83,25 +81,15 @@
 			<p class ="Planteamiento" >			
 			<p class ="P1Sub"> Planteamiento del problema:</p>
 		
-<p class ="Planteamiento">El problema consiste en estudiar el flujo bidimensional e incompresible de
-un fluido Newtoniano alrededor de un perfil flexible, el cual está basado en los perfiles simétrico y
-asimétrico de Joukowsky. El fluido tiene una velocidad inicial constante lejos del ala, paralela al eje de
-ésta. Del mismo modo la presión lejos del ala es constante. El ala se encuentra inmersa en un espacio
-infinito bidimensional. Para encontrar la solución se resuelven las ecuaciones de Navier-Stokes para
-un fluido incompresible, </p>
-     <p class="ecuaciones">$\frac{\partial \vec{u}}{\partial t}+\vec{u}\cdot\nabla u=-\frac{1}{\rho_f}\nabla P + \nu \nabla^2\vec{u}$,</p>
-	 <p class="ecuaciones">$\nabla \cdot u = 0$,</p>
-	 <p class ="Planteamiento"> donde $\rho_f$ es la densidad de masa,  $\nu$ la viscosidad cinemática, $u(r)$ y $P(r)$ son los campos de velocidad y presión.
-	 Las condiciones en la superficie del perfil son de no deslizamiento:</p>
-	 <p class="ecuaciones"> $u(r,t) = v_s (r_s,t) $</p>
-	 <p class ="Planteamiento">en donde $v_s(r_s,t)$ es la velocidad de la supeficie del perfil y  de lejos éste la velocidad es uniforme. </p>
-	 <p class ="Planteamiento">El problema se estudia numéricamente usando el Método de Boltzmann en redes implementado para este caso en Unidades de Pocesamiento Gráfico
-		GPU's por sus siglas en inglés. Se tiene un programa que en el que se pueden modificar los parámetros asociados a la geometrá, a su
-	        movimiento y los parámetros del flujo. El programa entrega una muestra de datos de los campos de velocidad y presión en el tiempo y las fuerzas que 
-		 el fluido hace sobre el perfil móvil. </p>
-
-    <p class ="Planteamiento"> El perfil está basado en los perfiles de Joukowski en donde se incluyó en la parte asimtétrica una fución que oscila en el tiempo,
-	    de tal manera que se simula el movimiento del perfil al pasar de un perfil asimétrico a uno simétrico como se muestra en las figuras.</p>
+<p class ="Planteamiento">El problema consiste en estudiar el flujo bidimensional e incompresible de un fluido Newtoniano alrededor de un perfil flexible, 
+el cual está basado en las alas de Joukowsky. El fluido tiene una velocidad inicial constante lejos del ala, paralela al eje de
+ésta. Del mismo modo la presión lejos del ala es constante. El ala se encuentra inmersa en un espacio infinito bidimensional. Para estudiar el problema
+se resuelven las ecuaciones de <a href = "PUnoTeoria.html"> Navier-Stokes</a> para un fluido incompresible. </p>
+<p class ="Planteamiento">El problema se estudia numéricamente usando el Método de Boltzmann en redes. Se tiene un programa que en el que se pueden modificar los 
+parámetros asociados a la geometrá, a su movimiento y los parámetros del flujo. El programa entrega una muestra de datos de los campos de velocidad y presión 
+en el tiempo y las fuerzas que el fluido hace sobre el perfil móvil. </p>
+<p class ="Planteamiento"> La geometría está basada en el perfil simétrico de Joukowski al que se le incluyó una parte asimtétrica pesada por fuciones que oscilan 
+en el tiempo, de tal manera que se simula el movimiento del perfil al pasar de un perfil asimétrico a uno simétrico como se muestra en la figura.</p>
 			
 		<div class = "video" style="text-align: center;">
                                 <a href="VIDEOS/nado_flex.gif" data-lightbox = "mygallery">
