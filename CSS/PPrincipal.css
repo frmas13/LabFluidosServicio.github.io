@@ -372,7 +372,6 @@ footer{ /*le damos color al pie de página*/
 }
 .P1Sub{
 	margin: 1% 0px 0px 0%;/* Disminui los margenes exteriores, estos eran los originales:  1% 0px 10px 10%*/
-	padding-left: 10%; /* Border interno para mejorar el aspecto del titulo*/
 	font-weight: 500;
 	font-size: 25px;
 	color: #33475b;
