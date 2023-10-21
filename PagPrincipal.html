@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset = "UTF-8">
+	<meta name ="viewport" content = "width = device-width, initial-scale=1.0">
+	<link rel ="stylesheet" href = "CSS/PPrincipal.css">
+	<meta name = "autor" content = "Roxette Ramirez"/> 
+	<meta name = "Descripción" content = "Difundir el trabajo realizado en el Laboratorio de Fluidos
+		de la Facultad de Ciencias de la UNAM." />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title> Laboratorio de Fluidos</title>
+	<link rel = "shortcut icon" href = "Icono.ico" type = "image/x-icon" />
+	<link href = "https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet"> 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header class ="header" id ="inicio"> 
+		<nav class = "menu_desplegable" id = "menu"> 
+			<section class= "menu_contenido">
+			<h1 class = "titulo">Laboratorio de Fluidos, Facultad de Ciencias, UNAM</h1>
+				<ul class = "menu_links">
+					<li class = "menu_item"> 
+						<a href = "PagPrincipal.html" class = "menu_link">Principal</a>
+					</li>
+					<li class = "menu_item  menu_item--show"> 
+						<a href = "PagPrincipal.html" class = "menu_link">Proyectos en curso<img src="Imagenes/arrow.svg" alt = "" class="menu_arrow"></a>
+						<ul class="menu_nesting">
+							<li class ="menu_inside">
+								<a href = "Docencia.html" class = "menu_link menu_link--inside">Docencia</a>
+							</li>
+							<li class ="menu_inside">
+								<a href = "Investigación.html" class = "menu_link menu_link--inside">Investigación</a>
+							</li>
+						</ul>
+					</li> 
+					<li class ="menu_item">
+						<a href="Galeria.html" class="menu_link">Galeria</a>
+					</li>
+					<li class ="menu_item">
+						<a href="ArtPublicados.html" class="menu_link">Artículos Publicados</a>
+					</li>
+					<li class ="menu_item"><a href="Contacto.html" class="menu_link">Integrantes</a>
+					</li>
+				</ul>
+			
+			</section>
+		</nav>
+
+	</header>
+	<main>
+	
+	<section class = "Galeria">
+			<div class="Carousel">
+        <div class="slick-list" id="slick-list">
+            <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
+				<svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path></svg>            </button>
+            <div class="slick-track" id="track">
+                <div class="slick">
+                    <div>
+                        <a href="ProbUno.html">
+                            <h4><small>Convección Natural</small>Ver más</h4>
+							<picture>
+                                <img src="IMG/Galeria/exp.png" alt="Imagen del Problema">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="Docencia2.html">
+                            <h4><small>Ondas superficiales </small> Ver más</h4>
+                            <picture>
+                                <img src="IMG/Galeria/ola.jpg" alt="Imagen del Problema">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4><small> Vibraciones inducidas por vórtices.</small> Ver más </h4>
+                            <picture>
+                                <img src="IMG/Galeria/viv.png" alt="Imagen del Problema">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="Docencia3.html">
+                            <h4><small>Fluidos Magnéticos </small>Ver más</h4>
+                            <picture>
+                                <img src="IMG/Galeria/flor_fm.jpeg" alt="Imagen del Problema">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="Docencia1.html">
+                            <h4><small> Nadador </small>Ver más </h4>
+                            <picture>
+                                <img src="IMG/Galeria/def_pez.png" alt="Imagen del Problema">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="slick">
+                    <div>
+                        <a href="#">
+                            <h4><small> Vivs's  and Chaos </small>Ver más</h4>
+                            <picture>
+                                <img src="IMG/Galeria/elip1.png" alt="Imagen del Problema">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
+				<svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='24' height='24'><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg>
+            </button>
+        </div>
+			</section>
+	
+	<section id = "Contenido">
+		<section class="Presentacion" id = "Col1">
+		      <div style="text-align: center;"> <h1><span style="font-size: larger;">El Laboratorio de Fluidos</span></h1> </div>
+		      <div class = "video" style="text-align: center;">
+            <a href="VIDEOS/5_foils.gif" data-lightbox = "mygallery">
+				<img src="VIDEOS/5_foils.gif" width = "90%" style = "max-width: 100%;"> </a>
+            </div>	
+            				
+				<p class ="Planteamiento"> El Laboratorio de Fluidos es uno de los Laboratorios de Investigación dentro de la Facultad de Ciencias de la UNAM. Aqui se realiza
+				investigación en Dinámica de Fluidos y la idea principal es tener proyectos integrales que abarquen la teoría, los experimentos 
+				y las simulaciones numéricas. Desde sus fundamentos aunque es un Laboratorio de investigación, es también un espacio en donde los proyectos
+				pueden surgir desde la licenciatura y crecer hacia el posgrado para culminar en la investigación de forntera en las áreas que abarcamos.<br>
+				Aqui se  presentan diferentes problemas en los que se ha trabajado, los proyectos actuales y propuestas para el futuro. 
+				El Laboratorio cuenta con algunos experimentos en proceso además de pequeños prototipos para proyectos experimentales enfocados a estudiantes de Licenciatura. 
+				Para la parte numérica, contamos con un pequeño cluster de 8 GPU's y programas que resuelven numéricamente las ecuaciones de Naver-Stokes en diferentes 
+				circunstancias que se han realizado y validado como parte del quehacer del Laboratorio. </p> 
+					
+			
+		</section>
+		
+		<aside  id = "Col2">
+			<h3>Sitios UNAM </h3>
+			<hr class="DatosBarra">
+			<ul class ="Anuncios"  >
+				<li><a href="https://www.fciencias.unam.mx/" class="Opc">Facultad de Ciencias</a>
+				</li>
+				<li><a href="https://fisica.fciencias.unam.mx/inicio/index.html" class="Opc">Dpto. de Física</a></li>
+				<li><a href="https://www.unam.mx/" class="Opc">Portal UNAM</a></li>
+			</ul>
+			
+		  	<h3>El Laboratorio</h3>
+			<hr class="DatosBarra">
+			<ul class ="Anuncios"  >
+				<li><a href="Contacto_Mandujano.html">Coordinador </a>
+				</li>
+				<li><a href="Contacto.html" class="Opc">Participantes</a></li>
+				<li><a href="estudiantes_lab.html" class="Opc">Estudiantes </a></li>
+			</ul>
+		</aside>
+		</section>
+	</main>
+	<footer id = "contacto">
+		<div class ="footer-content">
+			<div class ="Informacion">
+				<h2 class="Datos">Laboratorio de Fluidos</h2>
+				<p>4° piso, Dpto. de Física, </p>
+				<p>Facultad de Ciencias, UNAM </p>
+				<p>Teléfono: 5556224934 </p>
+				
+			</div>
+			<div class ="Redes">	
+			<p>Esta página se realizón con el apoyo parcial del proyecto DGAPA-PAPIME PE111020. Diseño y construcción: Roxette Ramirez 
+			y F. Manujano.</p>
+			</div>
+		</div>
+		<div class = "line"></div>
+	</footer>
+<script defer src="JS/main.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+		<meta charset = "utf-8" />
+		<link rel ="stylesheet" href = "CSS/PPrincipal.css"> <!--href es el archivo css se allá en la misma carpeta-->
+		<meta name = "autor" content = "Roxette Ramirez"/> 
+		<meta name = "Descripción" content = "Difundir el trabajo realizado en el Laboratorio de Fluidos
+		de la Facultad de Ciencias de la UNAM." />
+		<title> Ala oscilando</title>
+		<link rel = "shortcut icon" href = "Icono.ico" type = "image/x-icon" />
+		<link href = "https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet"> 
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+		<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      extensions: ["tex2jax.js"],
+      "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
+      tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+      TeX: { noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+      messageStyle: "none"
+    });
+    </script>    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+</head>
+	
+	<body>
+		<header class ="header" id ="inicio"> 
+		
+		<nav class = "menu_desplegable">  <!--Igual q en la principal-->
+			<section class= "menu_contenido">
+			<h1 class = "P1titulo">Flujo alrededor de un ala flexible</h1>
+				<ul class = "menu_links">
+					<li class = "menu_item"> 
+						<a href = "PagPrincipal.html" class = "menu_link">Principal</a>
+					</li>
+					<li class = "menu_item  menu_item--show"> 
+						<a href = "#" class = "menu_link">Proyectos en curso<img src="Imagenes/arrow.svg" alt = "" class="menu_arrow"></a>
+						<ul class="menu_nesting">
+							<li class ="menu_inside">
+								<a href = "Docencia.html" class = "menu_link menu_link--inside">Docencia</a>
+							</li>
+							<li class ="menu_inside">
+								<a href = "Investigación.html" class = "menu_link menu_link--inside">Investigación</a>
+							</li>
+						</ul>
+					</li> 
+					<li class ="menu_item">
+						<a href="Galeria.html" class="menu_link">Galeria</a>
+					</li>
+					<li class ="menu_item">
+						<a href="ArtPublicados.html" class="menu_link">Artículos Publicados</a>
+					</li>
+					<li class ="menu_item"><a href="Contacto.html" class="menu_link ">Integrantes</a>
+					</li>
+				</ul>
+			<div class="menu_icono"> 
+				<img src="IMG/menu.svg" class="menu_img">
+			</div>
+			</section>
+		</nav>
+	</header>
+	
+	<main id = "Contenido"> 
+	
+	<section class="Presentacion" id = "Col1">
+	<section class="Aletas" id="Aleta">
+		<p class ="P1Sub"> "Flujo alrededor de un ala flexible libre".</p>
+		<p class ="P1sub">Autor: Juan Manuel González López y F. Mandujano</p>
+		
+		<p class ="Planteamiento">Este proyecto de investigación nace como parte del servicio social del Fis. J. M. González en el que en donde implementó una 
+		ala flexible modificando un programa que simulaba el flujo alrededor de un ala rígida oscilante. El proyecto continuó como parte de su Tesis de 
+		Liceciatura en Física <a href="Docencia1.html"> "Flujo alrededor de un ala flexible"</a>. Actualmente se elijieron tres perfiles 
+		(tres conjuntos de valores para los parámetros geométricos) y se estudia el flujo al cambiar las frecuencias de deformación de 
+		los éstos. </p>		
+			
+		<p class ="P1Sub"> Planteamiento del problema:</p>
+		
+       <p class ="Planteamiento">  Una vez que se realizó un estudio del perfil fijo en el espacio, el siguiente 
+       paso es permitir  que el centro de masa del perfil se mueva bajo las fuerzas que el fluido hace sobre el. 
+       Numéricamente cada paso de tiempo se resuleve primero un problema de condiciones  condiciones a la frontera. 
+       Una vez obtenida la fuerza que actúa sobre el perfil, su centro de masa se desplaza siguiendo la segunda Ley 
+       de Newton y así sucecivamente.  </p>
+			
+		<div class = "video" style="text-align: center;">
+		      <p>Figura 1</p>
+            <a href="VIDEOS/nad_flex1.gif" data-lightbox = "mygallery">
+				<img src="VIDEOS/nad_flex1.gif" width = "60%"> </a>
+				<p>Figura 2</p>
+				<a href="VIDEOS/nad_flex2.gif" data-lightbox = "mygallery">
+				<img src="VIDEOS/nad_flex2.gif" width = "60%"> </a>
+				<p>Figura 3</p>
+				<a href="VIDEOS/nad_flex3.gif" data-lightbox = "mygallery">
+				<img src="VIDEOS/nad_flex3.gif" width = "60%"> </a>
+				<p>Figura 4</p>
+				<a href="VIDEOS/nad_flex4.gif" data-lightbox = "mygallery">
+				<img src="VIDEOS/nad_flex4.gif" width = "60%"> </a>
+		</div>
+	<p class ="Planteamiento">	 En las Figuras 1 y 2 se muestra el campo de vorticidad para dos deformaciónes, 
+	el Reynolds a la etrada es 50 y el número de Strouhal es de orden uno. Es de notar que, a diferencia de lo
+	observado con el <a href="Docencia1.html">ala rígida</a>, las estelas son del del tamaño del sistema sino que
+	escalan con el tamaño del perfil. En estos dos casos la velocidad de crucero es aproximadamente igual a la de 
+	la corriente. En las figuras 3 y 4 se muetran las mismas deformaciones a un Reynolds de uno y con un Strouhal 
+	del orden de 10, de manera que la velocidad en ambos casos es mas de 8 veces la velocidad de la corriente. </p>
+	</section>
+	</section>
+		<section id = "Col2">
+			<h3>Productos del trabajo.</h3>
+			<hr class="DatosBarra">
+			<ul class ="Anuncios"  >
+				<li><a href="ProbUno.html" class="Opc">Nado de Alas Rígidas</a>
+				</li>
+				<li><a href="Docencia1.html" class="Opc">Flujo alrededor de Alas flexibles</a></li>
+				 <li><a href="estudiantes_lab.html" class="Opc">Contacto: Juan Manuel González</a></li>
+			</ul>
+			
+		<!--	<h3>Problemas Resueltos</h3>
+			<hr class="DatosBarra">
+			<ul class ="Anuncios"  >
+				<li><a href="ProbUno.html">Ala oscilando contra corriente </a>
+					<ul class = "subtema">
+						<li>
+						<a href = "PUnoTeoria.html">Teoría</a>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#" class="Opc">Ejemplo 2</a></li>
+				<ul class = "subtema">
+						<li>
+						<a href = "PUnoTeoria.html">Teoría</a>
+						</li>
+					</ul>
+				<li><a href="#" class="Opc">Ejemplo 3</a></li>
+				<ul class = "subtema">
+						<li>
+						<a href = "PUnoTeoria.html">Teoría</a>
+						</li>
+					</ul>
+			</ul>-->
+		</section>		
+	</main>
+	<footer id = "contacto">
+			<div class ="footer-content">
+				<div class ="Informacion">
+					<h2 class="Datos">Laboratorio de Fluidos,</h2>
+					<p>4° piso Dpto. de Física, </p>
+					<p>Facultad de Ciencias, UNAM </p>					
+					<p>Teléfono: 5556224934</p>
+				</div>
+				<!-- <div class = "Redes"> 
+				<a href ="./" class = "Redes-icon">
+					<i class='bx bxl-facebook'></i>
+				</a>
+				<a href ="./" class = "Redes-icon">
+					<i class='bx bxl-twitter' ></i>
+				</a>
+				<a href ="./" class = "Redes-icon">
+					<i class='bx bxl-instagram' ></i>
+				</a>
+				</div> -->
+			</div>
+			<div class = "line"></div>
+		</footer>
+	<!--enlazo los archivos ja y css-->
+	<script src="js/Java.js"> </script>
+	</body>
+</html>

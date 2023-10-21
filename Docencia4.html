@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+		<meta charset = "utf-8" />
+		<link rel ="stylesheet" href = "CSS/PPrincipal.css"> <!--href es el archivo css se allá en la misma carpeta-->
+		<meta name = "autor" content = "Roxette Ramirez"/> 
+		<meta name = "Descripción" content = "Difundir el trabajo realizado en el Laboratorio de Fluidos
+		de la Facultad de Ciencias de la UNAM." />
+		<title> Caída con fricción </title>
+		<link rel = "shortcut icon" href = "Icono.ico" type = "image/x-icon" />
+		<link href = "https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet"> 
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+		<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      extensions: ["tex2jax.js"],
+      "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
+      tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+      TeX: { noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+      messageStyle: "none"
+    });
+    </script>    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+</head>
+	
+	<body>
+		<header class ="header" id ="inicio"> 
+		
+		<nav class = "menu_desplegable">  <!--Igual q en la principal-->
+			<section class= "menu_contenido">
+			<h1 class = "P1titulo">Las fuerzas de fricción</h1>
+				<ul class = "menu_links">
+					<li class = "menu_item"> 
+						<a href = "PagPrincipal.html" class = "menu_link">Principal</a>
+					</li>
+					<li class = "menu_item  menu_item--show"> 
+						<a href = "#" class = "menu_link">Proyectos en curso<img src="Imagenes/arrow.svg" alt = "" class="menu_arrow"></a>
+						<ul class="menu_nesting">
+							<li class ="menu_inside">
+								<a href = "Docencia.html" class = "menu_link menu_link--inside">Docencia</a>
+							</li>
+							<li class ="menu_inside">
+								<a href = "Investigación.html" class = "menu_link menu_link--inside">Investigación</a>
+							</li>
+						</ul>
+					</li> 
+					<li class ="menu_item">
+						<a href="Galeria.html" class="menu_link">Galeria</a>
+					</li>
+					<li class ="menu_item">
+						<a href="ArtPublicados.html" class="menu_link">Artículos Publicados</a>
+					</li>
+					<li class ="menu_item"><a href="Contacto.html" class="menu_link ">Integrantes</a>
+					</li>
+				</ul>
+			
+			<div class="menu_icono"> 
+				<img src="IMG/menu.svg" class="menu_img">
+			</div>
+			</section>
+		</nav>
+	</header>
+	
+	<main id = "Contenido"> 
+	
+	<section class="Presentacion" id = "Col1">
+	<section class="Aletas" id="Aleta">
+		<p class ="P1Sub">"Caída de cuerpos con fricición variable".</p>
+		<p class ="P1sub">Autor: F. Mandujano y C. Arzate </p>
+		<p class ="Planteamiento"> Este proyecto surge como parte de la discusión de la ley de caída libre y su contraparte 
+		en el laborartorio y la vida cotidiana. Al hacer observaciones preliminares es fácil notar que los cuerpos masivos 
+		al caer lo hacen siguiendo la ley de caída libre, es decir, la fuerza de fricción que hace el aire sobre el 
+		proyectil es muy pequeña, respecto de la fuerza gravitacional, por lo que resulta despreciable. El tiempo de caída de un cuerpo después 
+		de haber caído una distancia $h$ es $\sqrt{2h/g}$ así que para una caída de un metro es menos de medio segundo. Esto 
+		hace muy difícil observar la diferencia entre la caída de dos cuerpos masivos. Entonces para este problema, por una lado, se
+		propone realizar experimentos en donde se puede variar la presión exterior y, por otro lado, se proponen otro grupo de experimentos
+		en donde se cambian las propiedades del proyectil, de tal manera que se pueda aumentar la fuerza de resistencia.</p>
+		
+	<figure class = "PezEsq" style="text-align: center;">
+		<img src="IMG/Galeria/exp.png">
+	</figure>
+			
+	<p class ="P1Sub"> Planteamiento del problema: </p>
+   <p class ="Planteamiento"> El primer dispositivo consiste de una cámara en donde se puede variar la presión interna con una
+	altura suficientemente grande de manera que el tiempo de observacón no sea demasiado corto. En la parte superior de la
+	cámara hay un dispositivo para colocalr los proyectiles y dejarlos caer. Inicialmente se construyó un dispositivo preliminar
+	(que se muestra en la figura) de 50 cm de altura con un sipositivo para dejar caer los proyectiles. Sin embargo, la distancia
+	efectiva para realizar cualquier medición es muy pequeña, por lo que las diferencias en la caída del cuerpo respecto de la ley 
+	de caída libre son muy pequeñas. <br>  El segundo tipo de experimetos propuestos es estudiar el desizamiento sobre planos inclinados.
+	En este caso los experimentos se hacen a presión atmosférica y la idea es modificar el "bloque" para hacer un estudio de las fuerzas 
+	de frición. Nótese que en este caso hay dos fuentes de fricción: la fricción con el aire del laboratorio y la fricción entre el 
+	carrito deslizante y el riel que es importante caracterizar de forma separada. Esto implica que en este grupo de experimentos 
+	será impotante preparar las condiciones experimentales para hacer un estudio sólo de la fricción con el aire y esconder el efecto 
+	de fricción con el riel. </p>
+			
+	</section>
+	</section>
+		<section id = "Col2">
+			<h3>Contacto</h3>
+			<hr class="DatosBarra">
+			<ul class ="Anuncios"  >
+				<li><a href="Contacto_Mandujano.html" class="Opc">F. Mandujano (Experimentos)</a>
+				</li>
+				<li><a href="Contacto_Arzate.html" class="Opc">C. Arzate (Prototipos e Instrumentación) </a></li>
+			<!-- 	<li><a href="#" class="Opc">Ejemplo 3</a></li> -->
+			</ul>
+			
+			<!-- <h3>Problemas Resueltos</h3>
+			<hr class="DatosBarra">
+			<ul class ="Anuncios"  >
+				<li><a href="ProbUno.html">Ala oscilando contra corriente </a>
+					<ul class = "subtema">
+						<li>
+						<a href = "PUnoTeoria.html">Teoría</a>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#" class="Opc">Ejemplo 2</a></li>
+				<ul class = "subtema">
+						<li>
+						<a href = "PUnoTeoria.html">Teoría</a>
+						</li>
+					</ul>
+				<li><a href="#" class="Opc">Ejemplo 3</a></li>
+				<ul class = "subtema">
+						<li>
+						<a href = "PUnoTeoria.html">Teoría</a>
+						</li>
+					</ul>
+			</ul> -->
+		</section>		
+	</main>
+	<footer id = "contacto">
+			<div class ="footer-content">
+				<div class ="Informacion">
+					<h2 class="Datos">Laboratorio de Fluidos</h2>
+					<p>4° piso Dpto. de Física, </p>
+					<p>Facultad de Ciencias, UNAM </p>
+					<p>Teléfono: 5556224934 </p>
+				</div>
+				<!-- <div class = "Redes"> 
+				<a href ="./" class = "Redes-icon">
+					<i class='bx bxl-facebook'></i>
+				</a>
+				<a href ="./" class = "Redes-icon">
+					<i class='bx bxl-twitter' ></i>
+				</a>
+				<a href ="./" class = "Redes-icon">
+					<i class='bx bxl-instagram' ></i>
+				</a>
+				</div> -->
+			</div>
+			<div class = "line"></div>
+		</footer>
+	<!--enlazo los archivos ja y css-->
+	<script src="js/Java.js"> </script>
+	</body>
+</html>

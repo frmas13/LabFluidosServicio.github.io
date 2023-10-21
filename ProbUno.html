@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset = "UTF-8">
+	<meta name ="viewport" content = "width = device-width, initial-scale=1.0">
+	<link rel ="stylesheet" href = "CSS/PPrincipal.css">
+	<link rel ="stylesheet" href = "CSS/lightbox.min.css">
+	<meta name = "autor" content = "Roxette Ramirez"/> 
+	<meta name = "Descripción" content = "Difundir el trabajo realizado en el Laboratorio de Fluidos
+		de la Facultad de Ciencias de la UNAM." />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title> Flapping foil </title>
+	<link rel = "shortcut icon" href = "Icono.ico" type = "image/x-icon" />
+	<link href = "https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet"> 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+	
+	<script type = "text/javascript" src = "js/lightbox-plus-jquery.min.js"></script>
+</head>
+
+<body>
+	<header class ="header" id ="inicio"> 
+		<nav class = "menu_desplegable" id = "menu"> 
+			<section class= "menu_contenido">
+			<h1 class = "titulo">Flapping foil</h1>
+				<ul class = "menu_links">
+					<li class = "menu_item"> 
+						<a href = "PagPrincipal.html" class = "menu_link">Principal</a>
+					</li>
+					<li class = "menu_item  menu_item--show"> 
+						<a href = "PagPrincipal.html" class = "menu_link">Proyectos en curso<img src="Imagenes/arrow.svg" alt = "" class="menu_arrow"></a>
+						<ul class="menu_nesting">
+							<li class ="menu_inside">
+								<a href = "Docencia.html" class = "menu_link menu_link--inside">Docencia</a>
+							</li>
+							<li class ="menu_inside">
+								<a href = "Investigación.html" class = "menu_link menu_link--inside">Investigación</a>
+							</li>
+						</ul>
+					</li> 
+					<li class ="menu_item">
+						<a href="Galeria.html" class="menu_link">Galeria</a>
+					</li>
+					<li class ="menu_item">
+						<a href="ArtPublicados.html" class="menu_link">Artículos Publicados</a>
+					</li>
+					<li class ="menu_item"><a href="Contacto.html" class="menu_link">Integrantes</a>
+					</li>
+				</ul>
+			
+			</section>
+		</nav>
+
+	</header>
+		
+	<main id = "Contenido">
+		<section class="Presentacion" id = "Col1">
+		<section class="Aletas" id="Aleta">
+		<p class ="P1Sub"> Artículo: <a href = "https://pubs.aip.org/aip/pof/article-abstract/30/6/061901/259576/On-the-forced-flow-around-a-rigid-flapping-foil?redirectedFrom=fulltext">		
+		 "On the forced flow around a rigid flapping foil".</a></p>
+		<p class ="P1sub">Autor: F. Mandujano and C. Malaga.</p>
+		
+		  <div style="text-align: center;"><img src="IMG/Galeria/ala_rig.png" width="556" height="191" alt="Esquema del problema" id="rig"></div>
+	     <p class ="Planteamiento" >Se considera un perfil formado por un semi-círculo unido a un triángulo isóseles, como 
+	     se muestra en la figura. El perfil oscila respecto de un eje que pasa por el centro del círculo y está en un flujo 
+	     uniforme. Este problema está caracterizado por cuatro parámeros adimensionales, el número de Reynodls, el número de 
+	     Strouhal (o velocidad reducida), la amplitud de oscilación y la masa relativa entre el fluido y el sólido. Para estudiar 
+	     el problema se resuelven las ecuaciones de <a href="PUnoTeoria.html">Navier-Stokes</a> con las condiciones de frontera de no deslizamiento en la 
+	     superficie del perfil y flujo uniforme lejos de él. Para el movimiento del perfil se consideran tres grados de libertad, 
+	     para la parte angular se impone una oscilación sinusoidal y para la traslación se resuelve numéricamente la segunda 
+	     ley de Newton. Para mayores detalles del método numérico ver <a href = "https://pubs.aip.org/aip/pof/article-abstract/30/6/061901/259576/On-the-forced-flow-around-a-rigid-flapping-foil?redirectedFrom=fulltext">
+	     Phys. of Fluids 30, 061901 (2018).</a></p>
+				<div style="text-align: center;"><a href="VIDEOS/02gif.gif" data-lightbox = "mygallery">
+				<img src="VIDEOS/02gif.gif" width = "60%"></a>
+				<a href="VIDEOS/03gif.gif" data-lightbox = "mygallery">
+				<img src="VIDEOS/03gif.gif" width = "60%"></a>
+				<a href="VIDEOS/04gif.gif" data-lightbox = "mygallery">
+				<img src="VIDEOS/04gif.gif" width = "60%"></a>			</div>	
+	
+		<p class ="Planteamiento" >Uno de los primeros resultados importantes es que para un cierto rango de valores del número de
+		Strouhal y la amplitud de oscilación del perfil, el "pez" nada contra corriente siempre y cuando el número de Reynolds esté 
+		por encima de alrededor de 60-70. En las peliculas de arriba se muestran tres casos, en el primero el pez nada con una velocidad
+		menor, en valor absoluto, a la del flujo aguas arriba. En el segundo caso la velocidad del "pez" es aproximadamente igual que 
+		la de la corriente, así que parece estar en reposo. En el tercer caso el "pez" lleva una velocidad mayor 
+		que la de la corriente. En todos los casos la velocidad de crucero es constante. Es importante resaltar que este "pez" no es
+		capaz de nadar sin corriente en contra hasta lo estudiado en este trabajo. Este hecho puede modificarse permitiendo
+		que el perfil pueda <a href="alas_flex.html">deformarse</a>. </p>
+						
+                
+		</section>
+		</section>
+		<!-- <div class ="Miembros"> -->
+			
+		<!-- </div> -->
+		<section id = "Col2">
+			<h3>Teoría</h3>
+			<hr class="DatosBarra">
+			<ul class ="Anuncios"  >
+				<li><a href="PUnoTeoria.html" class="Opc">Navier-Stokes.</a>
+				</li>
+				<li><a href="Teo_LBM.html" class="Opc"> Método de Boltzmann </a></li>
+				<!-- <li><a href="#" class="Opc">Ejemplo 3</a></li> -->
+			</ul>
+			
+			<h3>Contacto</h3>
+			<hr class="DatosBarra">
+			<ul class ="Anuncios"  >
+				<li><a href="Contacto_Mandujano.html">F. Mandujano </a>
+					<!-- <ul class = "subtema">
+						<li>
+						<a href = "PUnoTeoria.html">Teoría</a>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#" class="Opc">Ejemplo 2</a></li>
+				<ul class = "subtema">
+						<li>
+						<a href = "PUnoTeoria.html">Teoría</a>
+						</li>
+					</ul>
+				<li><a href="#" class="Opc">Ejemplo 3</a></li>
+				<ul class = "subtema">
+						<li>
+						<a href = "PUnoTeoria.html">Teoría</a>
+						</li>
+					</ul> -->
+			</ul>
+			</section>
+	</main>
+	<footer id = "contacto">
+		<div class ="footer-content">
+			<div class ="Informacion">
+				<h2 class="Datos">Laboratorio de Fluidos</h2>
+				<p>4° piso, Dpto. de Física </p>
+				<p>Facultad de Ciencias, UNAM </p>
+				<p>Teléfono: 5556224934 </p>
+				
+			</div>
+			<!-- <div class = "Redes">
+				<a href ="./" class = "Redes-icon"><i class='bx bxl-facebook'></i></a>
+				<a href ="./" class = "Redes-icon"><i class='bx bxl-twitter' ></i></a>
+				<a href ="./" class = "Redes-icon"><i class='bx bxl-instagram' ></i></a>
+			</div> -->
+		</div>
+		<div class = "line"></div>
+	</footer>
+</body>
+
+
+</html>
