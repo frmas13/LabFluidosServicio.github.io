@@ -92,7 +92,7 @@ header{ /*Es la clase header que contiene la imagen Portada*/
 	font-size: 20px;
 	color: rgba(225, 225, 225, 1);
 	text-shadow:  1px 1px 2px black;
-	margin: 0 auto auto 5% ;
+	margin: 0 auto auto 1% ;
 }
 
 .menu_desplegable{
@@ -504,7 +504,7 @@ footer{ /*le damos color al pie de página*/
     line-height: 50px;
     border-radius: 25px;
     background-color: #f1f1f1;
-	margin: 15px 10px;
+	margin: 45px 40px;
 }
 
 .chip img {
