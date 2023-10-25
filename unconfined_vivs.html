@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset = "UTF-8">
-	<meta name ="viewport" content = "width = device-width, initial-scale=1.0">
-	<link rel ="stylesheet" href = "CSS/PPrincipal.css">
-	<link rel ="stylesheet" href = "CSS/lightbox.min.css">
-	<meta name = "autor" content = "Roxette Ramirez"/> 
-	<meta name = "Descripción" content = "Difundir el trabajo realizado en el Laboratorio de Fluidos
+		<meta charset = "utf-8" />
+		<link rel ="stylesheet" href = "CSS/PPrincipal.css"> <!--href es el archivo css se allá en la misma carpeta-->
+		<meta name = "autor" content = "Roxette Ramirez"/> 
+		<meta name = "Descripción" content = "Difundir el trabajo realizado en el Laboratorio de Fluidos
 		de la Facultad de Ciencias de la UNAM." />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title> Laboratorio de Fluidos</title>
-	<link rel = "shortcut icon" href = "Icono.ico" type = "image/x-icon" />
-	<link href = "https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet"> 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-	
-	<script type = "text/javascript" src = "js/lightbox-plus-jquery.min.js"></script>
+		<title> VIV's en un cilidro </title>
+		<link rel = "shortcut icon" href = "Icono.ico" type = "image/x-icon" />
+		<link href = "https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet"> 
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+		<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      extensions: ["tex2jax.js"],
+      "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
+      tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+      TeX: { noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+      messageStyle: "none"
+    });
+    </script>    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
 </head>
 
 <body>
 	<header class ="header" id ="inicio"> 
 		<nav class = "menu_desplegable" id = "menu"> 
 			<section class= "menu_contenido">
-			<h1 class = "titulo">Laboratorio de Fluidos, Facultad de Ciencias, UNAM</h1>
+			<h1 class = "titulo">VIV's en un cilindro</h1>
 				<ul class = "menu_links">
 					<li class = "menu_item"> 
 						<a href = "PagPrincipal.html" class = "menu_link">Principal</a>
@@ -61,68 +67,86 @@
 		Vortex induced vibrations of a cylinder at low mass ratio. </a> </p>
 		<p class ="P1sub">Autores: M. Reyes y F. Mandujano. </p>
 		
-			        
+		<div style="text-align: center;"><img src="IMG/Galeria/esqcil_unconf.png" width="564" height="502" alt="">
+		<p> Figura. Esquema del problema </p></div>	        
 	
-		<p class ="Planteamiento" > Se realizó un estudio detallado del flujo alrededor de un cilindro en un fluido
-		infinito sujeto a una fuerza externa Hookeana. Para resolverlo se resuelven las ecuaciones de 
-		<a href="PUnoTeoria.html">Navier-Stokes</a> con las condiciones de no deslizamiento	sobre la superficie del 
-		cilindro y flujo uniforme lejos del objeto, como se muestra en la figura. </p> 
-								
+		<p class ="Planteamiento" > Se realizó un estudio detallado del flujo alrededor de un cilindro, de masa $m$ y radio $D/2$,
+		 en un fluido infinito sujeto a una fuerza externa Hookeana cuya frecuencia es $\omega=\sqrt{k/m}$. La posición de equilibrio del cilindro 
+		 sin flujo es ${\bf r}_0$.	 Para este fin se resuelven las ecuaciones de <a href="PUnoTeoria.html">Navier-Stokes</a> con 
+		 las condiciones de frontera de no deslizamiento	sobre la superficie del	cilindro y flujo uniforme de velocidad $U$ lejos 
+		 del objeto, como se muestra en la Esquema (a). Para encontrar soluciones aproximadas se utilizó el <a href="Teo_LBM.html">Método de Boltzmann</a> en 
+		redes. En vista que el dominio computacional es finito se impone un flujo uniforme en la entrada y condiciones libres
+		se esferzo en el resto de las fronteras, como se muestra en el Esquema (b). Esta condición resulta aproximarse bien al caso 
+		infinito cuando cuando la razón de bloqueo $D/h$ es pequeña. Para mayores detalles ver <a href = "https://www.sciencedirect.com/science/article/pii/S0997754621001473?casa_token=tSFiR_24GU0AAAAA:HDr2C2Qi2E8BW9bsvUTYqtRWEa7yHF9DRCaRpLpbdyqQoNU9tV92zTYpEALewcQUW9NUz_U80g">
+		"Vortex induced vibrations of a cylinder at low mass ratio". </a> </p>	
+		<p class ="Planteamiento" > Al incidir el flujo sobre el cilindro a los números de Reynolds considerados hay desprendimiento
+		de vórtices detrás del cilindro, lo que produce una fuerza hidrodinámica oscilante. Este fenómeno se conoce como Vibraciones
+		Induciadas por Vórtices. El movimiento que esta fuerza produce sobre el cilindro depende del valor de la constante de restitución 
+		$k$. Los parámetros adimensionales relevante en este caso son el número de Reynolds $Re=\frac{U\rho}{\nu}$, el un número de Strouhal
+		$S_t = \frac{2U}{\omega D}$ y la razón entre la densidad del fluido y la del sólido que se fija en uno.</p>	
+		
      <div class = "video" style="text-align: center;">
 		      <p>Figura 1</p>
             <a href="VIDEOS/cil_uconf_e.gif" data-lightbox = "mygallery">
-				<img src="VIDEOS/cil_uconf_e.gif" width = "80%"> </a>
+				<img src="VIDEOS/cil_uconf_e.gif" width = "85%"> </a>
+		</div>
+		<p class ="Planteamiento" > En los experimentos numéricos fijamos la frecuencia natural de la fuerza hookeana e incrementamos el
+		número de Reynolds. El comportamiento del flujo y del sólido se dividen en tres ramas principales separadas por regiones de
+		transición. Cuando $S_t<0.6$ el cilindro empieza a oscilar con una amplitud que crece exponencialmente hasta llegar a un máximo, 
+		esta rama se conoce como rama de exitación. En la Figura 2 se puede ver una simualción en esta región, la trayectoria del centro
+		de masa es en forma de ocho, como se puede notar en la animación, esta oscilación es poco perceptible.  </p>
+		<div class = "video" style="text-align: center;">
 				<p>Figura 2</p>
 				<a href="VIDEOS/cil_uconf_et.gif" data-lightbox = "mygallery">
-				<img src="VIDEOS/cil_uconf_et.gif" width = "80%"> </a>
+				<img src="VIDEOS/cil_uconf_et.gif" width = "85%"> </a>
+		</div>		
+		<p class ="Planteamiento" > Al aumentar $S_t$ la trayectorias en fomra de ocho se modifican como se puede apreciar en la Figura 2
+		así como la estela detrás del cilindro. En esta región, denotada como zona de transición, se caracteriza por tener solcuiones 
+		múltiples, es decir, cambiando las condiciones iniciales del flujo, las soluciones observadas son diferentes: por ejemplo, hay
+		soluciones periódicas y no periodicas para los mismos valores de $S_t$ y $Re$. </p>
+		<div class = "video" style="text-align: center;">
 				<p>Figura 3</p>
 				<a href="VIDEOS/cil_uconf_l.gif" data-lightbox = "mygallery">
-				<img src="VIDEOS/cil_uconf_l.gif" width = "80%"> </a>
+				<img src="VIDEOS/cil_uconf_l.gif" width = "85%"> </a>
+		</div>
+		<p class ="Planteamiento" > La zona de transición lleva a la rama conocida como <i>lock-in</i> al aumentar el $S_t$, en donde la 
+		amplitud de oscilación en la direción transversal al flujo es máxima. En esta región, junto con la región de excitación,
+		 las trayectorias del centro de	masa del cilindro son siempre periódicas y la frecuencia en la direción del flujo es dos veces 
+		 la frecuencia de oscilación transversal que resulta en trayectorias en forma de ochos.</p>	
+		<div class = "video" style="text-align: center;">
 				<p>Figura 4</p>
 				<a href="VIDEOS/cil_uconf_l1.gif" data-lightbox = "mygallery">
-				<img src="VIDEOS/cil_uconf_l1.gif" width = "80%"> </a>
+				<img src="VIDEOS/cil_uconf_l1.gif" width = "85%"> </a>
+		</div>	
+		<p class ="Planteamiento" > La rama de <i>lock-in</i> se caracteriza por una región en donde la ampitud de ocilación transversal
+		al flujo del cilindro varia poco. Las Fiuras 3 y 4 se muestrandos ejemplos dentro de la esta rama, en donde se puede
+		apreciar que la estela detrás del cilindro puede ser muy diferente, en un caso se desprenden un par de vórtices de signo contrarea
+		por ciclo (2S) que además presentan la llamada segunda inestabilidad en donde cambia un poco el patrón resultado de la combinación
+		de cuatro vóritices que se fusionan en un vórtice tipo dipolo. En el segundo caso, Figura 4, se desprenden dos pares de 
+		vórtices (2P) por ciclo que se fusionan por pares aguas abajo formando también estructuras tipo dipolo. </p>	
+		<div class = "video" style="text-align: center;"> 	
 				<p>Figura 5</p>
 				<a href="VIDEOS/cil_uconf_lt.gif" data-lightbox = "mygallery">
-				<img src="VIDEOS/cil_uconf_lt.gif" width = "80%"> </a>
+				<img src="VIDEOS/cil_uconf_lt.gif" width = "85%"> </a>
 		</div>     
-                
+       <p class ="Planteamiento" > La región de <i>lock-in</i> transita a otra región de transición en donde las trayectorias del cilindro
+       pueden ser muy variadas. Aquí como en la región de transición entre la rama de excitación y el <i>lock-in</i>, hay coexistencia
+       de soluciones. En la Figura 5 se puede ver un ejemplo en donde la trayectoria del cilindro es muy errática y muy asimétrica,
+       a diferencia del ejmplo en la Figura 2. En este caso existen condiciones iniciles para las cuales se obtien la reflexión especular,
+       respecto de la dirección transversal al flujo de la solución que se observa en la figura 5. </p>         
 		</section>
 		</section>
 		<!-- <div class ="Miembros"> -->
 			
 		<!-- </div> -->
 		<section id = "Col2">
-			<h3>Propuestas de Proyectos</h3>
+		<h3>Teoría</h3>
 			<hr class="DatosBarra">
 			<ul class ="Anuncios"  >
-				<li><a href="ProbUno.html" class="Opc">Aleta oscilando contra corriente.</a>
+				<li><a href="PUnoTeoria.html" class="Opc">Navier-Stokes.</a>
 				</li>
-				<li><a href="#" class="Opc">Ejemplo 2</a></li>
-				<li><a href="#" class="Opc">Ejemplo 3</a></li>
-			</ul>
-			
-			<h3>Problemas Resueltos</h3>
-			<hr class="DatosBarra">
-			<ul class ="Anuncios"  >
-				<li><a href="ProbUno.html">Ala oscilando contra corriente </a>
-					<ul class = "subtema">
-						<li>
-						<a href = "PUnoTeoria.html">Teoría</a>
-						</li>
-					</ul>
-				</li>
-				<li><a href="#" class="Opc">Ejemplo 2</a></li>
-				<ul class = "subtema">
-						<li>
-						<a href = "PUnoTeoria.html">Teoría</a>
-						</li>
-					</ul>
-				<li><a href="#" class="Opc">Ejemplo 3</a></li>
-				<ul class = "subtema">
-						<li>
-						<a href = "PUnoTeoria.html">Teoría</a>
-						</li>
-					</ul>
+				<li><a href="Teo_LBM.html" class="Opc"> Método de Boltzmann </a></li>
+				<!-- <li><a href="#" class="Opc">Ejemplo 3</a></li> -->
 			</ul>
 			</section>
 	</main>
@@ -135,11 +159,11 @@
 				<p>Teléfono: 5556224934 </p>
 				
 			</div>
-			<div class = "Redes">
+			<!-- <div class = "Redes">
 				<a href ="./" class = "Redes-icon"><i class='bx bxl-facebook'></i></a>
 				<a href ="./" class = "Redes-icon"><i class='bx bxl-twitter' ></i></a>
 				<a href ="./" class = "Redes-icon"><i class='bx bxl-instagram' ></i></a>
-			</div>
+			</div> -->
 		</div>
 		<div class = "line"></div>
 	</footer>
