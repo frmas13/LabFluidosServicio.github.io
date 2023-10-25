@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset = "UTF-8">
-	<meta name ="viewport" content = "width = device-width, initial-scale=1.0">
-	<link rel ="stylesheet" href = "CSS/PPrincipal.css">
-	<link rel ="stylesheet" href = "CSS/lightbox.min.css">
-	<meta name = "autor" content = "Roxette Ramirez"/> 
-	<meta name = "Descripción" content = "Difundir el trabajo realizado en el Laboratorio de Fluidos
+		<meta charset = "utf-8" />
+		<link rel ="stylesheet" href = "CSS/PPrincipal.css"> <!--href es el archivo css se allá en la misma carpeta-->
+		<meta name = "autor" content = "Roxette Ramirez"/> 
+		<meta name = "Descripción" content = "Difundir el trabajo realizado en el Laboratorio de Fluidos
 		de la Facultad de Ciencias de la UNAM." />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title> Laboratorio de Fluidos</title>
-	<link rel = "shortcut icon" href = "Icono.ico" type = "image/x-icon" />
-	<link href = "https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet"> 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-	
-	<script type = "text/javascript" src = "js/lightbox-plus-jquery.min.js"></script>
+		<title> VIV's de un cilidro confinado</title>
+		<link rel = "shortcut icon" href = "Icono.ico" type = "image/x-icon" />
+		<link href = "https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet"> 
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+		<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      extensions: ["tex2jax.js"],
+      "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
+      tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+      TeX: { noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+      messageStyle: "none"
+    });
+    </script>    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
 </head>
 
 <body>
 	<header class ="header" id ="inicio"> 
 		<nav class = "menu_desplegable" id = "menu"> 
 			<section class= "menu_contenido">
-			<h1 class = "titulo">Laboratorio de Fluidos, Facultad de Ciencias, UNAM</h1>
+			<h1 class = "titulo">VIV's de un cilindro confinado</h1>
 				<ul class = "menu_links">
 					<li class = "menu_item"> 
 						<a href = "PagPrincipal.html" class = "menu_link">Principal</a>
@@ -59,32 +65,87 @@
 		<section class="Aletas" id="Aleta">
 		<p class ="P1Sub">Artículo:<a href = "https://pubs.aip.org/aip/pof/article/35/3/037123/2882153/The-flow-around-a-forced-cylinder-between-two">
 		The flow around a forced cylinder between two parallel walls. </a> </p>
-		<p class ="P1sub">Autores: F. Mandujano, C. Málaga y R. Rechtmann. </p>
-		
-			        
+		<p class ="P1sub">Autores: F. Mandujano, R. Rechtmann y C. Málaga. </p>
+					        
+	   <div style="text-align: center;"><img src="IMG/Galeria/esqcil_conf.png" width="1053" height="453" alt="">
+	   <p>Figura 1: Esquema del problema</p></div>
 	
-		<p class ="Planteamiento" > Se realizó un estudio detallado del flujo alrededor de un cilindro, confinado entre placas 
-		paralelas, sujeto a una fuerza externa Hookeana. Para resolverlo se resuelven las ecuaciones de 
-		<a href="PUnoTeoria.html">Navier-Stokes</a> con las condiciones de no deslizamiento	sobre la superficie de un cilindro y 
-		sobre las parede laterales. Las condiciones a la entrada y salida correponden a un flujo de Poiseuille, como se muestra en la figura. </p> 
-								
+		<p class ="Planteamiento" > Se realizó un estudio detallado del flujo alrededor de un cilindro, de masa $m$ y radio $a$, 
+		confinado entre placas paralelas, separadas una distancia $h$, y sujeto a una fuerza externa Hookeana cuya frecuencia es 
+		$\sqrt{k/m}$. Para esto se resuelven las ecuaciones de <a href="PUnoTeoria.html">Navier-Stokes</a> con las condiciones de frontera de 
+		no	deslizamiento	sobre la superficie del cilindro y sobre las parede laterales, como se aprecia en la Figura 1.
+		En el dominio numérico el flujo a la entrada corresponde a un flujo de Poiseuille y a la salida hay una condición libre de 
+		esfuerzos. Esto simula las condiciones de frontera para el caso en el que el sistema es infinito en la dirección del flujo. </p> 
+		<p class ="Planteamiento" >Este problema presenta carácteristicas muy similares al caso en el que no hay paredes laterales
+		(<a href="unconfined_vivs.html">caso no confinado</a>). Los parámetros relevantes son el número de Reynolds ($Re$), 
+		el número de Strouhal ($S_t$), la razón de densidades entre el fluido y el sólido y la razón de aspecto entre el 
+		diámetro del cilindro y la separación de las placas.  El comportamiento también se puede dividir en ramas separadas por 
+		regiones de transición. Hay un rama de excitación, la correpondiente al <i>lock-in</i> y un tercera rama en donde las 
+		amplitudes colapsan a cero y el cilindro queda en reposo (rama de colapso).</p>					
      <div class = "video" style="text-align: center;">
-		      <p>Figura 1</p>
-            			<a href="https://ia800500.us.archive.org/11/items/cil_conf_lt/cil_conf_e.gif" data-lightbox = "mygallery">
-				<img src="https://ia800500.us.archive.org/11/items/cil_conf_lt/cil_conf_e.gif" width = "80%"> </a>
-				<p>Figura 2</p>
-				<a href="https://archive.org/download/cil_conf_et/cil_conf_et.gif" data-lightbox = "mygallery">
-				<img src="https://archive.org/download/cil_conf_et/cil_conf_et.gif" width = "80%"> </a>
+		      <p>Figura 2</p>
+            <a href="VIDEOS/cil_conf_e.gif" data-lightbox = "mygallery">
+				<img src="VIDEOS/cil_conf_e.gif" width = "85%"> </a>
+		</div> 
+		<p class ="Planteamiento" > La Figura 2 muestra el campo de vorticidad en la rama de exitación, las trayectorias del centro de masa 
+		del cilindro son en forma de ocho y la amplitud transversal crece exponencialmente. En este caso se observa que tanto el cilindro 
+		como las paredes desprenden vórtices que ineractúan aguas abajo. Cada medio cilo se forman pares de vortices cerca del cilindro, 
+		uno se desprende de la parded y otro de signo contrareo se desprende del cilindro formando una estructura dipolar. Entonces, 
+		cada ciclo se observan dos vórtices tipo dipolo que se aparean aguas abajo para formar una estela tipo 2S. </p>		
+		<div class = "video" style="text-align: center;">	
 				<p>Figura 3</p>
-				<a href="https://ia800500.us.archive.org/11/items/cil_conf_lt/cil_conf_l.gif" data-lightbox = "mygallery">
-				<img src="https://ia800500.us.archive.org/11/items/cil_conf_lt/cil_conf_l.gif" width = "80%"> </a>
+				<a href="VIDEOS/cil_conf_et.gif" data-lightbox = "mygallery">
+				<img src="VIDEOS/cil_conf_et.gif" width = "85%"> </a>
+		</div>
+		<p class ="Planteamiento" > Al aumentar el número de Strouhal aumenta la amplitud de oscilación en ambas direcciones, 
+		paralela y transversal al flujo,  las trayectorias del centro de masa	del cilindro siguen pareciendo ochos que se modifican 
+		ligeramente en cada revolución pues ya no son periódicas, es decir, no se cierran hasta los tiempos de observación considerados.
+		En analogía al caso <a href="unconfined_vivs.html">no confinado</a>, de la rama de excitación se pasa a una región de transición 
+		en donde las trayectorias tienen variaciones a los ochos, lo cual, produce variaciones en el desprendimiento 
+		como se puede apreciar en la Figura 3.  
+		</p>	
+		<div class = "video" style="text-align: center;">	
 				<p>Figura 4</p>
-				<a href="https://archive.org/download/cil_conf_lt/cil_conf_lt.gif" data-lightbox = "mygallery">
-				<img src="https://archive.org/download/cil_conf_lt/cil_conf_lt.gif" width = "80%"> </a>
+				<a href="VIDEOS/cil_conf_l.gif" data-lightbox = "mygallery">
+				<img src="VIDEOS/cil_conf_l.gif" width = "85%"> </a>
+		</div>
+		<p class ="Planteamiento" >Después de la región de transición está la rama del <i>lock-in</i> en donde la amplitud de oscilación
+		en la dirección transversal al flujo es máxima, sin embargo, no choca nunca contra la pared. Un resultado interesante es que 
+		la amplitud de oscilación transversal en este caso es del mismo orden que en el caso no confinado. A diferencia de la rama de
+		exitación, la vorticidad que se produce an la frontera solo alimenta al vórtice, del mismo signo, sin realmente formar un vórtice,
+		de tal manera que se produce una estela 2S con una vorticidad más intensa. Es de notar que la vorticidad que se produce a lo largo
+		del canal tambiém parece alimentar los vórtices de tal manera que se promueve el patrón 2S: es una guía de vórtices (o guía de 
+		ondas). Las ramas de excitación y de <i>lock-in</i> se caracterizan por que las trayectorias del cilindro son periódicas, en 
+		analogía al caso <a href="unconfined_vivs.html">no confinado</a>.</p>
+		<div class = "video" style="text-align: center;">
 				<p>Figura 5</p>
-				<a href="https://ia800500.us.archive.org/11/items/cil_conf_lt/cil_conf_c.gif" data-lightbox = "mygallery">
-				<img src="https://ia800500.us.archive.org/11/items/cil_conf_lt/cil_conf_c.gif" width = "80%"> </a>
-		</div>     
+				<a href="VIDEOS/cil_conf_lt.gif" data-lightbox = "mygallery">
+				<img src="VIDEOS/cil_conf_lt.gif" width = "85%"> </a>
+		</div>
+		<p class ="Planteamiento" > Aquí la rama de excitación también se caracteriza por una variación pequeña de la amplitud transversal
+		de oscilación del cilindro. De hecho en este trabajo se realizó un análisis para varios valores de $m^*$ y se encontró que el 
+		comportamiento de la oscilación trasnversal es el mismo (se encuentran las mismas ramas a los mismos valores de un nuevo parámetro
+		que es función del número de Strouhal y de $m^*$); para mayores detalles ver el artículo
+		<a href = "https://pubs.aip.org/aip/pof/article/35/3/037123/2882153/The-flow-around-a-forced-cylinder-between-two">
+		The flow around a forced cylinder between two parallel walls. </a> Despúes de la rama del <i>lock-in</i> aparece otra región
+		de transición. Las trayectorias pierden la periodicidad y las estelas detrás del cilindro se modifican y cambian el patrón 
+		al desprender en cada ciclo estructuras diferentes. En esta región también se observa coexistencia de soluciones como en el caso 
+		 <a href="unconfined_vivs.html">no confinado</a>.</p>
+		<div class = "video" style="text-align: center;">
+				<p>Figura 6</p>
+				<a href="VIDEOS/cil_conf_c.gif" data-lightbox = "mygallery">
+				<img src="VIDEOS/cil_conf_c.gif" width = "85%"> </a>
+		</div> 
+		 <p class ="Planteamiento" >Al aumentar $S_t$ se encuentra una región en donde las amplitudes de oscilación del cilindro,
+		  tanto en la dirección transversal como la longitudinal al flujo, tienden a cero abruptamente. En la literatura esta región 
+		  se ha denotado como región de decoherencia; se ha observado experimentalmente en sistemas en donde se asume que el efecto 
+		  de la pared es despreciable y a valores más grandes del número de Reynolds que los usados en el caso 
+		  <a href="unconfined_vivs.html">no confinado</a> en donde no se observó depués de la rama del <i>lock-in</i>. En la 
+		  Figura 6 se muestra un ejemplo en esta región. Es de notar primero que el flujo es simétrico respecto a una reflexión
+		  especular en la dirección transversal al flujo lo cual, indíca que la fuerza en esta derección es cero. Los vórtices detrás del 
+		  cilindro ya no se desprenden y permanecen simétricos. El flujo arstra vorticidad aguas abajo que se convina con vorticidad
+		  producide en la pared para formar vórtices anti-simétricos (en el sentido de que uno tiene vorticidad positiva y otro negativa) 
+		  aguas abajo. </p>   
                 
 		</section>
 		</section>
@@ -92,37 +153,21 @@
 			
 		<!-- </div> -->
 		<section id = "Col2">
-			<h3>Propuestas de Proyectos</h3>
+		<h3>Teoría</h3>
 			<hr class="DatosBarra">
 			<ul class ="Anuncios"  >
-				<li><a href="ProbUno.html" class="Opc">Aleta oscilando contra corriente.</a>
+				<li><a href="PUnoTeoria.html" class="Opc">Navier-Stokes.</a>
 				</li>
-				<li><a href="#" class="Opc">Ejemplo 2</a></li>
-				<li><a href="#" class="Opc">Ejemplo 3</a></li>
+				<li><a href="Teo_LBM.html" class="Opc"> Método de Boltzmann </a></li>
+				<!-- <li><a href="#" class="Opc">Ejemplo 3</a></li> -->
 			</ul>
-			
-			<h3>Problemas Resueltos</h3>
+			<hr class="DatosBarra">	
+			<h3>Problemas Relacionados</h3>
 			<hr class="DatosBarra">
 			<ul class ="Anuncios"  >
-				<li><a href="ProbUno.html">Ala oscilando contra corriente </a>
-					<ul class = "subtema">
-						<li>
-						<a href = "PUnoTeoria.html">Teoría</a>
-						</li>
-					</ul>
+				<li><a href="unconfined_vivs.html">VIV's de un cilindro </a>
 				</li>
-				<li><a href="#" class="Opc">Ejemplo 2</a></li>
-				<ul class = "subtema">
-						<li>
-						<a href = "PUnoTeoria.html">Teoría</a>
-						</li>
-					</ul>
-				<li><a href="#" class="Opc">Ejemplo 3</a></li>
-				<ul class = "subtema">
-						<li>
-						<a href = "PUnoTeoria.html">Teoría</a>
-						</li>
-					</ul>
+				<li><a href="chaos_virs.html" class="Opc">VIR's y Caos</a></li>
 			</ul>
 			</section>
 	</main>
@@ -134,11 +179,6 @@
 				<p>Facultad de Ciencias, UNAM </p>
 				<p>Teléfono: 5556224934 </p>
 				
-			</div>
-			<div class = "Redes">
-				<a href ="./" class = "Redes-icon"><i class='bx bxl-facebook'></i></a>
-				<a href ="./" class = "Redes-icon"><i class='bx bxl-twitter' ></i></a>
-				<a href ="./" class = "Redes-icon"><i class='bx bxl-instagram' ></i></a>
 			</div>
 		</div>
 		<div class = "line"></div>
