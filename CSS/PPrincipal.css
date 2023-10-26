@@ -10,15 +10,9 @@ body{
 }
 
 header{ /*Es la clase header que contiene la imagen Portada*/
-	height: 15%; /*Específica la altura del elemento*/
-	background-image: linear-gradient(to top, rgba(117, 209, 230, 0.1) 0%, rgba(117, 209, 230, 0.1)100%), url(../IMG/Portada.jpg); /*Establece la imagen de fondo*/
-	background-repeat: no-repeat; /*Define como se repiten los fondos*/
-	background-size: cover; /*tamaño de las imagenes de fondo: "cover" escala la imagen al máximo sin deformarla  */
-	background-attachment: fixed; /*Indica si la posición de la imagen será fija o se desplazara con el bloque contenedor*/
-	background-position: 15% 20%; /*Define la posicion de la imagen inicial*/ 
-	/* position: relative; */
-	/*  */
-
+	display: flex;
+	background-color: #1A202C;
+	    padding: 0 50px;
 }
 
 
@@ -97,8 +91,7 @@ header{ /*Es la clase header que contiene la imagen Portada*/
 }
 
 .menu_desplegable{
-	/* top:25%;  */
-	
+	float: right;
 	height: 70px;
 	background-color: #1A202C; 
 	color: #fff;
@@ -107,9 +100,7 @@ header{ /*Es la clase header que contiene la imagen Portada*/
 .menu_contenido{
 	display: flex;
 	align-items:center;
-	width:90%;
-	max-width:85%;
-	height: 100%; 
+	width:100%;
 	margin: 0 auto;
 }
 
@@ -621,8 +612,51 @@ a{
 .slick-next{
     right: 0px;
 }
-@media (max-width: 1000px){
-.titulo{
-	font-size: 10px;
-	}	
+@media (max-width: 850px){
+	header{
+		display: block;
+	}
+	.menu_desplegable{
+		float: unset;
+		height: 50px;
+	}
+	.menu_links{
+		float: left;
+	}
+	.menu_item{
+		font-size: 75%;
+		inline-size: fit-content;
+	}
+	#Col1{
+		padding-left: unset;
+	}
+	#Col2 h3{
+		font-size: 9px;
+		display: contents;
+	}
+	.Anuncios{
+		width: 80%;
+		margin-left: unset;
+		font-size: 8px;
+		padding-left: 2px;
+	}
+	footer{
+		font-size: 8px;
+	}
+	.slick-next{
+		right: 20px;
+	}
+	.Planteamiento{
+		margin: unset;
+	}
+	.P1Sub{
+		font-size: 85%;
+	}
+	.caja .card{
+		width: 200px;
+		height: auto;
+	}
+	.caja .card{
+		font-size: 15px;
+	}
 }
