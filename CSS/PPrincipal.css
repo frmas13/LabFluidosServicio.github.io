@@ -93,6 +93,7 @@ header{ /*Es la clase header que contiene la imagen Portada*/
 	color: rgba(225, 225, 225, 1);
 	text-shadow:  1px 1px 2px black;
 	padding: 1% 1%;
+	text-wrap: wrap;
 }
 
 .menu_desplegable{
@@ -621,5 +622,7 @@ a{
     right: 0px;
 }
 @media (max-width: 1000px){
-	
+.titulo{
+	font-size: 10px;
+	}	
 }
