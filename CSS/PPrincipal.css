@@ -92,13 +92,13 @@ header{ /*Es la clase header que contiene la imagen Portada*/
 	font-size: 20px;
 	color: rgba(225, 225, 225, 1);
 	text-shadow:  1px 1px 2px black;
-	margin: 0 auto auto 1% ;
+	padding: 1% 1%;
 }
 
 .menu_desplegable{
 	/* top:25%;  */
 	
-	height: 5%;
+	height: 70px;
 	background-color: #1A202C; 
 	color: #fff;
 	width: 100%;
