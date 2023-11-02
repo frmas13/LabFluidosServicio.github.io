@@ -1,36 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset = "UTF-8">
-	<meta name ="viewport" content = "width = device-width, initial-scale=1.0">
-	<link rel ="stylesheet" href = "CSS/PPrincipal.css">
-	<link rel ="stylesheet" href = "CSS/lightbox.min.css">
-	<meta name = "autor" content = "Roxette Ramirez"/> 
-	<meta name = "Descripción" content = "Difundir el trabajo realizado en el Laboratorio de Fluidos
+		<meta charset = "utf-8" />
+		<link rel ="stylesheet" href = "CSS/PPrincipal.css"> <!--href es el archivo css se allá en la misma carpeta-->
+		<meta name = "autor" content = "Roxette Ramirez"/> 
+		<meta name = "Descripción" content = "Difundir el trabajo realizado en el Laboratorio de Fluidos
 		de la Facultad de Ciencias de la UNAM." />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title> Laboratorio de Fluidos</title>
-	<link rel = "shortcut icon" href = "Icono.ico" type = "image/x-icon" />
-	<link href = "https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet"> 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-	
-	<script type = "text/javascript" src = "js/lightbox-plus-jquery.min.js"></script>
+		<title> Boltzmann en Redes </title>
+		<link rel = "shortcut icon" href = "Icono.ico" type = "image/x-icon" />
+		<link href = "https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet"> 
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+		<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      extensions: ["tex2jax.js"],
+      "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
+      tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+      TeX: { noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+      messageStyle: "none"
+    });
+    </script>    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
 </head>
-
-<body>
-	<header class ="header" id ="inicio"> 
-		<section class= "menu_contenido"><img src = "IMG/Escudo.svg" width="auto" height="40" align="left"/>
-			<h1 class = "titulo">Laboratorio de Fluidos</h1>
-		</section>
-		<nav class = "menu_desplegable" id = "menu"> 
-				<ul class = "menu_links">
-					<li class = "menu_item"> 
-						<a href = "PagPrincipal.html" class = "menu_link">Principal</a>
-					</li>
-					<li class = "menu_item  menu_item--show"> 
-						<a href = "PagPrincipal.html" class = "menu_link">Proyectos en curso<img src="Imagenes/arrow.svg" alt = "" class="menu_arrow"></a>
+	
+	<body>
+		<header class ="header" id ="inicio"> 
+		<nav class = "menu_desplegable">  <!--Igual q en la principal-->
+			<section class= "menu_contenido">
+			<h1 class = "P1titulo">Ecuación de Boltzmann en Redes</h1>
+				<ul class= "menu_links"> 
+				<li class = "menu_item"> 
+					<a href = "PagPrincipal.html" class = "menu_link">Principal</a>
+				</li>
+				<li class = "menu_item  menu_item--show"> 
+						<a href = "#" class = "menu_link">Proyectos en curso<img src="Imagenes/arrow.svg" alt = "" class="menu_arrow"></a>
 						<ul class="menu_nesting">
 							<li class ="menu_inside">
 								<a href = "Docencia.html" class = "menu_link menu_link--inside">Docencia</a>
@@ -39,88 +44,93 @@
 								<a href = "Investigación.html" class = "menu_link menu_link--inside">Investigación</a>
 							</li>
 						</ul>
-					</li> 
-					<li class ="menu_item">
+				</li>
+			
+				<!-- <li class= "menu_item menu_item--deslizar">
+						<a href="ProbUno.html" class="menu_link" target="" title = "Problema 1">Problema<img src="IMG/arrow.svg" alt = "" class="menu_arrow"></a>
+				
+						<ul class="menu_nesting">
+							<li class ="menu_inside">
+							<a href="PUnoTeoria.html" class="menu_link menu_link--inside ">Teoría</a>
+						</ul>
+					</li> -->
+				<li class ="menu_item">
 						<a href="Galeria.html" class="menu_link">Galeria</a>
 					</li>
 					<li class ="menu_item">
+				<li class ="menu_item">
 						<a href="ArtPublicados.html" class="menu_link">Artículos Publicados</a>
 					</li>
-					<li class ="menu_item"><a href="Contacto.html" class="menu_link">Integrantes</a>
-					</li>
-				</ul>
+				<li class = "menu_item">
+					<a href = "Contacto.html" class = "menu_link">Integrantes</a>
+				</li>
+			</ul>
+			
+			<div class="menu_icono"> 
+				<img src="IMG/menu.svg" class="menu_img">
+			</div>
+			</section>
 		</nav>
-
-	</header>	
+	</header>
+	
 	<main id = "Contenido">
 		<section class="Presentacion" id = "Col1">
 		<section class="Aletas" id="Aleta">
-		<p class ="P1Sub">Artículo:<a href = "https://pubs.aip.org/aip/pof/article/35/3/037123/2882153/The-flow-around-a-forced-cylinder-between-two">
-		The flow around a forced cylinder between two parallel walls. </a> </p>
-		<p class ="P1sub">Autores: F. Mandujano, C. Málaga y R. Rechtmann. </p>
-		
-			        
+		<p class ="P1Sub">El Método de Boltzmann en Redes. </p>
+		<p class ="P1sub"> F. Mandujano. </p>
+		<p class ="Planteamiento" >El método de Boltzmann en redes que se ha utilizado para encontrar soluciones aproximadas a las 
+		ecuaciones de <a href="PUnoTeoria.html">Navier-Stokes con fronteras inmersas,</a> es una discretización de la ecuación de 
+		Boltzmann en la aproximación de Bhatnagar–Gross–Krook (BGK)) para flujos en dos dimensiones. El método que se describe
+		fue desarrollado por <a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.56.6811">He & Luo en 1997</a>, aunque en la actualidad hay muchca literatura al rededor de éste algoritmo. Los detalles se pueden 
+		encontrar en <a href = "https://pubs.aip.org/aip/pof/article-abstract/30/6/061901/259576/On-the-forced-flow-around-a-rigid-flapping-foil?redirectedFrom=fulltext">		
+		 "On the forced flow around a rigid flapping foil"</a> y en las referencias que ahí aparecen.</p> 
+		<p class ="Planteamiento" >De la teoría cinética de los gases, si $f({\bf r},{\bf c},t)d{\bf r}d{\bf c}$ es la probabilidad 
+		de encontrar a una partícula en una posición entre ${\bf r}$ y ${\bf r}+d{\bf r}$ y con velocidad entre ${\bf c}$ 
+		y ${\bf c}+d{\bf c}$, la	ecuación de Boltzmann está dada por</p>
+		<p class="ecuaciones">$\frac{\partial f}{\partial t} + {\bf c} \cdot \nabla f = \Omega$,</p>	
+		<p class ="Planteamiento" >en donde $\Omega$ es el término de colisión de Boltzmann. En la ecuación anterior se omitió un término adicional cuando hay fuerzas externas. El término $\Omega$ es un término integral que hace que la ecuación resultante sea una ecuación integro-diferencial no-lineal muy compleja. Sin embargo, en circunstancias en donde el sistema está solo ligeramente fuera de equilibrio temodinámico Bhatnagar, Gross y Krook mostraron que se puede aproximar por un término de relajación. Si $f_{eq}({\bf r},{\bf c},t)$ es la función de distribución en el equilibrio (que corresponde a la función de distribución de Maxwell), la ecuación de Boltzmann en la <a href="https://ui.adsabs.harvard.edu/abs/1954PhRv...94..511B/abstract">aproximación BGK</a> es </p>
+		<p class="ecuaciones">$\frac{\partial f}{\partial t} + {\bf c} \cdot \nabla f = -\frac{1}{\tau}(f-f_{eq}),$ </p>	
+	<p class ="Planteamiento" > Una vez que se conocen soluciones a esta ecuación, los campos macroscópicos se obtienen calculando
+	los dos primeros momentos, en el espacio de velocidades, de la función de distribución, es decir, la densidad de masa $\rho({\bf r},t)$ y de momento del fluido $\rho{\bf u}({\bf r},t)$ están dados por </p>
+		<p class="ecuaciones"> $\rho({\bf r},t) = \int f({\bf r},{\bf c},t)d{\bf c}$, y </p>
+		<p class="ecuaciones"> $\rho({\bf r},t) {\bf u}({\bf r},t) = \int f({\bf r},{\bf c},t)d{\bf c}$ </p>	
+		<p class ="Planteamiento" > Al hacer un desarrollo de Chapman-Enskog de esta ecuación se encuentra que este problema es
+		equivalente a resolver las ecuaciones de Navier-Stokes en el límite de números de Mach pequeños.  </p>			
+     <p class ="Planteamiento" > <a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.56.6811">El método de Boltzmann en redes</a> corresponde a una discretización de la ecuación de Boltzmann en la aproximación BGK en la malla D2Q9, en donde el espacio físico se discretiza usando una malla cartesiana y el espacio de veloicades sólo tiene nueve velocidades en las direcciones de los 8 vecínos más cercanos y el cero. El número de velocidades y la discretización espacial resultan al pasar las integrales en los cálculos de las variables macroscópicas por sumas discretas usando cuadraturas. Esta discretización tiene una foma muy particular, ya que al discretizar el espacio de velocidades de tal manera que la masa y el momento mantengan sus propiedades, ahora se tienen nueve funciones de distribución que dependen de la posición para cada dirección representada por las nueve velocidades discretas.</p>
+    <p class ="Planteamiento" > El esquema numérico queda de la siguiente forma, se escoge por simplicidad una malla caresiana tal que la distancia entre nodos es uno y el paso de timepo también igual a uno, la ecuación discreta de Bolztmann toma la forma</p>
+   <p class="ecuaciones"> $f_k({\bf r}+{\bf e}_k,t+1) = f_k({\bf r},t)-\frac{1}{\tau}(f_k({\bf r},t)-f_k^{eq}({\bf r},t))$, </p>
+    <p class ="Planteamiento" > en donde el índice $k$ corre de 0 a 8 y ${\bf e}_k$ es la velocidad microscópica en la dirección de $k$. El conjunto de velocidades discretas es ${\bf e}=\{(0,0),\pm (1,0),\pm (0,1),\pm (1,1),\pm (1,-1)\}$. Los campos macroscṕicos se calculan a partir de</p>
+    <p class="ecuaciones"> $\rho({\bf r},t) = \sum_{k} f({\bf r},t)$, y </p>
+		<p class="ecuaciones"> $\rho({\bf r},t) {\bf u}({\bf r},t) = \sum_{k} f({\bf r},t){\bf e}_k$, </p>
+	<p class ="Planteamiento" >la función de distribución de equilibrio con esta discretización está dada por la expresión </p>
+	<p class="ecuaciones"> $f_k^{eq} = \rho_0 \omega_k (1+3{\bf u}\cdot{\bf e}_k+\frac{9}{2}({\bf u}\cdot{\bf e}_k)^2-\frac{3}{2}{\bf u}^2)$, </p>
+	<p class ="Planteamiento" > en donde $\omega_0=4/9$, $\omega_k=1/9$ si $k=1,..,4$ y $\omega_k=1/36$ si $k=5,...,8$. Con este esquema se pueden obtener soluciones aproximadas a la ecuación de Boltzmann asegurando que no hay error en el cálculo de los momentos de la distribución de partículas al cambiar integrales por sumas discretas. Para completar el algoritmo hay que especificar las condiciones a la frontera. En vista que de entrada se supone que los campos macrosópicos anteriores satisfacen las ecuaciones de <a href="PUnoTeoria.html">Navier-Stokes</a> buscamos soluciones numéricas para las nueve funciones de distribución $f_k({\bf r},t)$ que satisfagan las condiciones de frontera macroscópicas. En la actualidad hay muchos algoritmos para imponer diferentes condiciones de frontera para este conjunto de ecuaciones diferenciales parciales. Se han implementado dos tipos de condición de frontera: la condición de no-deslizamiento para fronteras sólido-fluido y condiciones libres de esfuerzo en froteras fluido-fluido. Para más detalles de los algoritmos utilizados ver <a href = "https://pubs.aip.org/aip/pof/article-abstract/30/6/061901/259576/On-the-forced-flow-around-a-rigid-flapping-foil?redirectedFrom=fulltext">		
+		 "On the forced flow around a rigid flapping foil"</a>. </p>
+		<p class ="Planteamiento" > Este método se implementó en paralelo en el lenguaje CUDA C para correrlo en GPU's, por sus siglas en inglés. El método de Boltzmann en Redes resulta un algoritmo muy adecuado para paralelizar en GPU's y permite hacer simulaciones en tiempos relativamente cortos respecto de su contraparte serial que son de orden de 70 veces más lentas. Esto ha permitido hacer suficientes simulaciones (expermientos numéricos) para estudiar con mucho detalle propiedades del flujo, por ejemplo, las interacciones sólido-fluido o sólido-fluido-sólido en el caso de tener más de una frontera inmersa móvil. En la actualidad tenemos un conjunto de programas que ajustan diferentes condiones de frontera para resolver las ecuaciones de <a href="Teo_LBM.html">Navier-Stokes</a> para flujos alrededor de uno o más cuerpos inmersos móviles: cilindros  elípticos, alas rígidas y alas deformables. </p> 
+	<p class ="Planteamiento" >Dentro del Laboratorio de Fluidos ofrecemos proyectos de Tesis de Licenciatura y Posgrado en materias afines a la Dinámica de Fluidos. Estos proyectos abarcan desde extender los programas existentes a otras condifciones de frontera, hasta estudiar problemas de interés como interaciones hidrodinámicas solido-fluido y sólido-fluido-sólido. Actualmente, se cuenta con infraestructura de cómputo en continuo crecimiento en donde se pueden hacer simulaciones usando este método en dominios de alta resolución y en tiempos muy razoanables de cómputo, de tal manera que los proyectos de Licenciatura pueden extenderse facilmente a estudios de Posgrado y culminar en artículos de investigación en problemas de interés actual. </p>	
 	
-		<p class ="Planteamiento" > Se realizó un estudio detallado del flujo alrededor de un cilindro, confinado entre placas 
-		paralelas, sujeto a una fuerza externa Hookeana. Para resolverlo se resuelven las ecuaciones de 
-		<a href="PUnoTeoria.html">Navier-Stokes</a> con las condiciones de no deslizamiento	sobre la superficie de un cilindro y 
-		sobre las parede laterales. Las condiciones a la entrada y salida correponden a un flujo de Poiseuille, como se muestra en la figura. </p> 
-								
-     <div class = "video" style="text-align: center;">
-		      <p>Figura 1</p>
-            <a href="VIDEOS/cil_conf_e.gif" data-lightbox = "mygallery">
-				<img src="VIDEOS/cil_conf_e.gif" width = "80%"> </a>
-				<p>Figura 2</p>
-				<a href="VIDEOS/cil_conf_et.gif" data-lightbox = "mygallery">
-				<img src="VIDEOS/cil_conf_et.gif" width = "80%"> </a>
-				<p>Figura 3</p>
-				<a href="VIDEOS/cil_conf_l.gif" data-lightbox = "mygallery">
-				<img src="VIDEOS/cil_conf_l.gif" width = "80%"> </a>
-				<p>Figura 4</p>
-				<a href="VIDEOS/cil_conf_lt.gif" data-lightbox = "mygallery">
-				<img src="VIDEOS/cil_conf_lt.gif" width = "80%"> </a>
-				<p>Figura 5</p>
-				<a href="VIDEOS/cil_conf_c.gif" data-lightbox = "mygallery">
-				<img src="VIDEOS/cil_conf_c.gif" width = "80%"> </a>
-		</div>     
-                
+   		</section>
 		</section>
-		</section>
+		
 		<!-- <div class ="Miembros"> -->
 			
 		<!-- </div> -->
 		<section id = "Col2">
-			<h3>Propuestas de Proyectos</h3>
+			<h3>Trabajo en proceso</h3>
 			<hr class="DatosBarra">
 			<ul class ="Anuncios"  >
-				<li><a href="ProbUno.html" class="Opc">Aleta oscilando contra corriente.</a>
+				<li><a href="alas_flex.html" class="Opc">Alas flexibles.</a>
 				</li>
-				<li><a href="#" class="Opc">Ejemplo 2</a></li>
-				<li><a href="#" class="Opc">Ejemplo 3</a></li>
+				<li><a href="chaos_virs.html" class="Opc">Rotaciones inducidas por vórtices y caos.</a></li>
+				<!-- <li><a href="#" class="Opc">Ejemplo 3</a></li> -->
 			</ul>
 			
 			<h3>Problemas Resueltos</h3>
 			<hr class="DatosBarra">
 			<ul class ="Anuncios"  >
-				<li><a href="ProbUno.html">Ala oscilando contra corriente </a>
-					<ul class = "subtema">
-						<li>
-						<a href = "PUnoTeoria.html">Teoría</a>
-						</li>
-					</ul>
-				</li>
-				<li><a href="#" class="Opc">Ejemplo 2</a></li>
-				<ul class = "subtema">
-						<li>
-						<a href = "PUnoTeoria.html">Teoría</a>
-						</li>
-					</ul>
-				<li><a href="#" class="Opc">Ejemplo 3</a></li>
-				<ul class = "subtema">
-						<li>
-						<a href = "PUnoTeoria.html">Teoría</a>
-						</li>
-					</ul>
+				<li><a href="ProbUno.html">Ala oscilando contra corriente. </a>	</li>
+				<li><a href="unconfined_vivs.html" class="Opc">VIV's de un cilindro. </a></li>
+				<li><a href="confined_vivs.html" class="Opc">VIV's de un cilindro: efectos de confinamiento</a></li>
 			</ul>
 			</section>
 	</main>
@@ -133,11 +143,11 @@
 				<p>Teléfono: 5556224934 </p>
 				
 			</div>
-			<div class = "Redes">
+			<!-- <div class = "Redes">
 				<a href ="./" class = "Redes-icon"><i class='bx bxl-facebook'></i></a>
 				<a href ="./" class = "Redes-icon"><i class='bx bxl-twitter' ></i></a>
 				<a href ="./" class = "Redes-icon"><i class='bx bxl-instagram' ></i></a>
-			</div>
+			</div> -->
 		</div>
 		<div class = "line"></div>
 	</footer>
